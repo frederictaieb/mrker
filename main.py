@@ -9,8 +9,7 @@ import requests
 from dotenv import load_dotenv
 
 from utils.spotify import get_tracks
-
-from utils.audio import split
+from utils.audio import process_mix, clean_output_dirs
 
 
 load_dotenv()
@@ -23,16 +22,15 @@ def save_to_json(tracks: list[dict], filename: str) -> None:
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(tracks, f, ensure_ascii=False, indent=2)
 
+    print(f"JSON généré : {filename}")
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Récupère les morceaux d'une playlist Spotify, génère un JSON et découpe un WAV en MP3."
+        description="Récupère les morceaux d'une playlist Spotify, génère un JSON, découpe un WAV, puis exporte en MP3 et FLAC."
     )
 
-    parser.add_argument(
-        "playlist",
-        help="URL de la playlist Spotify"
-    )
+    parser.add_argument("playlist", help="URL de la playlist Spotify")
 
     parser.add_argument(
         "-j",
@@ -45,21 +43,43 @@ def parse_args() -> argparse.Namespace:
         "-w",
         "--wav",
         default="data/input/input.wav",
-        help="Chemin vers le fichier WAV à découper",
+        help="Chemin vers le fichier audio à découper",
     )
 
     parser.add_argument(
-        "-o",
-        "--output-dir",
-        default="data/output",
+        "--wav-output-dir",
+        default="data/output/wav",
+        help="Dossier de sortie des WAV découpés",
+    )
+
+    parser.add_argument(
+        "--mp3-output-dir",
+        default="data/output/mp3",
         help="Dossier de sortie des MP3",
     )
 
     parser.add_argument(
-        "-b",
-        "--bitrate",
-        default="320k",
-        help="Bitrate MP3 (ex: 192k, 320k)",
+        "--flac-output-dir",
+        default="data/output/flac",
+        help="Dossier de sortie des FLAC",
+    )
+
+    parser.add_argument(
+        "--no-mp3",
+        action="store_true",
+        help="Ne pas générer les MP3",
+    )
+
+    parser.add_argument(
+        "--no-flac",
+        action="store_true",
+        help="Ne pas générer les FLAC",
+    )
+
+    parser.add_argument(
+        "--no-normalize-mp3",
+        action="store_true",
+        help="Ne pas normaliser les MP3",
     )
 
     return parser.parse_args()
@@ -79,26 +99,41 @@ def main() -> int:
         return 1
 
     try:
-
         tracks = get_tracks(client_id, client_secret, args.playlist)
-
-        # 💾 JSON
         save_to_json(tracks, args.json)
-        print(f"JSON généré : {args.json}")
 
-        # 🎚 Découpage WAV → MP3
         if args.wav:
-            print("Découpage du WAV en cours...")
+            print("Nettoyage des dossiers de sortie...")
 
-            files = split(
+            clean_output_dirs([
+                args.wav_output_dir,
+                args.mp3_output_dir,
+                args.flac_output_dir,
+            ])
+            
+            print("Découpage du WAV et export en cours...")
+
+            result = process_mix(
                 tracks=tracks,
-                wav_filename=args.wav,
-                output_dir=args.output_dir,
-                bitrate=args.bitrate,
+                input_file=args.wav,
+                wav_output_dir=args.wav_output_dir,
+                mp3_output_dir=args.mp3_output_dir,
+                flac_output_dir=args.flac_output_dir,
+                generate_mp3=not args.no_mp3,
+                generate_flac=not args.no_flac,
+                normalize_mp3=not args.no_normalize_mp3,
             )
 
-            print(f"MP3 générés : {len(files)}")
-            print(f"Dossier : {args.output_dir}")
+            print(f"WAV générés : {len(result['wav'])}")
+            print(f"Dossier WAV : {args.wav_output_dir}")
+
+            if not args.no_mp3:
+                print(f"MP3 générés : {len(result['mp3'])}")
+                print(f"Dossier MP3 : {args.mp3_output_dir}")
+
+            if not args.no_flac:
+                print(f"FLAC générés : {len(result['flac'])}")
+                print(f"Dossier FLAC : {args.flac_output_dir}")
 
         return 0
 

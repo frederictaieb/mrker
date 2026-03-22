@@ -157,3 +157,7 @@ def build_filename(artist: str, album: str, title: str, ext: str = ".mp3") -> st
         filename = f"{artist} [{album}] {title}{ext}"
 
     return filename
+
+import shutil
+from pathlib import Path
+
