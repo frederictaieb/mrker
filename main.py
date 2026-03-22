@@ -8,11 +8,7 @@ from pathlib import Path
 import requests
 from dotenv import load_dotenv
 
-from utils.spotify import (
-    get_access_token,
-    extract_playlist_id,
-    get_playlist_tracks,
-)
+from utils.spotify import get_tracks
 
 from utils.audio import split
 
@@ -83,12 +79,8 @@ def main() -> int:
         return 1
 
     try:
-        # 🎧 Spotify
-        playlist_id = extract_playlist_id(args.playlist)
-        token = get_access_token(client_id, client_secret)
-        tracks = get_playlist_tracks(playlist_id, token)
 
-        print(f"Total tracks : {len(tracks)}")
+        tracks = get_tracks(client_id, client_secret, args.playlist)
 
         # 💾 JSON
         save_to_json(tracks, args.json)

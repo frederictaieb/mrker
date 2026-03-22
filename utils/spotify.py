@@ -6,7 +6,6 @@ from urllib.parse import urlparse
 from utils.tools import format_duration_ms
 from utils.text import clean_album, clean_title, build_filename
 
-
 def get_access_token(client_id: str, client_secret: str) -> str:
     auth_string = f"{client_id}:{client_secret}"
     auth_b64 = base64.b64encode(auth_string.encode()).decode()
@@ -78,3 +77,8 @@ def get_playlist_tracks(playlist_id: str, access_token: str) -> list[dict]:
         params = None
 
     return tracks
+
+def get_tracks(client_id:str, client_secret:str, playlist:str):
+    playlist_id = extract_playlist_id(playlist)
+    token = get_access_token(client_id, client_secret)
+    return get_playlist_tracks(playlist_id, token)
