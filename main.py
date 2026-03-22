@@ -281,6 +281,25 @@ def save_to_json(tracks: list[dict], filename: str = "playlist_tracks.json") -> 
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(tracks, f, ensure_ascii=False, indent=2)
 
+def save_with_silence_to_csv(
+    tracks: list[dict],
+    filename: str = "spotify_links_with_silence.csv",
+    silence_link: str = "https://open.spotify.com/local///silence-10s/10",
+) -> None:
+    """
+    Crée un CSV avec une seule colonne: spotify_link
+    et insère un lien de silence entre chaque track.
+    """
+    with open(filename, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["spotify_link"])
+
+        for i, track in enumerate(tracks):
+            writer.writerow([track.get("spotify_link", "")])
+
+            if i < len(tracks) - 1:
+                writer.writerow([silence_link])
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -296,17 +315,21 @@ def parse_args() -> argparse.Namespace:
         default="playlist_tracks.csv",
         help="Nom du fichier CSV de sortie"
     )
+
+    parser.add_argument(
+        "-s",
+        "--silences",
+        default="playlist_tracks_with_silences.csv",
+        help="Nom du fichier CSV de sortie avec silences"
+    )
+
     parser.add_argument(
         "-j",
         "--json",
         default="playlist_tracks.json",
         help="Nom du fichier JSON de sortie"
     )
-    parser.add_argument(
-        "--no-silence",
-        action="store_true",
-        help="Ne pas insérer la piste silence entre les morceaux"
-    )
+
     parser.add_argument(
         "--quiet",
         action="store_true",
@@ -332,16 +355,17 @@ def main() -> int:
         playlist_id = extract_playlist_id(args.playlist)
         token = get_access_token(client_id, client_secret)
         tracks = get_playlist_tracks(playlist_id, token)
-
-        if not args.no_silence:
-            tracks = insert_silence_between_tracks(tracks, SILENCE_TRACK)
+        tracks_with_silences = insert_silence_between_tracks(tracks, SILENCE_TRACK)
 
         if not args.quiet:
             for track in tracks:
                 print(track["filename"])
 
+        #save_to_csv(tracks_with_silences, args.silences)
+        save_with_silence_to_csv(tracks, args.silences)
         save_to_csv(tracks, args.csv)
         save_to_json(tracks, args.json)
+
 
         print(f"Total entrées : {len(tracks)}")
         print(f"CSV généré : {args.csv}")
