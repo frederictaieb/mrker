@@ -322,6 +322,7 @@ def process_mix(
     generate_flac: bool = True,
     normalize_mp3: bool = True,
 ) -> dict[str, list[str]]:
+
     wav_files = split(
         tracks=tracks,
         input_filename=input_file,
