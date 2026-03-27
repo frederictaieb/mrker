@@ -122,7 +122,7 @@ def clean_title(title: str, album: str) -> str:
 
     return t
 
-def build_filename(artist: str, album: str, title: str, ext: str = ".mp3") -> str:
+def build_filename(artist: str, album: str, title: str, ext: str = ".wav") -> str:
     artist = shorten_artists(artist, 2)
     album = clean_album(album)
 

@@ -1,104 +1,88 @@
 from pathlib import Path
-from utils.tools import format_duration_ms
 import subprocess
+import shutil
 import numpy as np
 import soundfile as sf
-import shutil
+
+from utils.tools import ms_to_hms_dcm
 
 
-# =========================
-# CUT DETECTION
-# =========================
-
-def find_best_cut_with_moving_average(
-    signal: np.ndarray,
-    sr: int,
-    theoretical_cut_ms: int,
-    window_ms: int = 2000,
-    average_window_ms: int = 100,
-) -> int:
-    half_window_ms = window_ms // 2
-
-    search_start_ms = max(0, theoretical_cut_ms - half_window_ms)
-    search_end_ms = theoretical_cut_ms + half_window_ms
-
-    avg_window_samples = max(1, int(sr * average_window_ms / 1000))
-    ms_step_samples = max(1, int(sr / 1000))
-
-    search_start_sample = int(search_start_ms * sr / 1000)
-    search_end_sample = int(search_end_ms * sr / 1000)
-
-    best_cut_sample = search_start_sample
-    best_avg = None
-
-    current_sample = search_start_sample
-
-    while (
-        current_sample + avg_window_samples <= len(signal)
-        and current_sample <= search_end_sample
-    ):
-        window = signal[current_sample:current_sample + avg_window_samples]
-        avg_volume = float(np.mean(np.abs(window)))
-
-        if best_avg is None or avg_volume < best_avg:
-            best_avg = avg_volume
-            best_cut_sample = current_sample
-
-        current_sample += ms_step_samples
-
-    return int(best_cut_sample * 1000 / sr)
-
-
-def compute_cut_points_iterative(
-    tracks: list[dict],
+def detect_tracks(
     input_filename: str,
-    search_window_ms: int = 2000,
-    average_window_ms: int = 100,
-) -> list[int]:
+    silence_threshold: float = 0.0,
+    min_silence_ms: int = 300,
+    min_track_ms: int = 1000,
+) -> list[tuple[int, int]]:
+    """
+    Détecte les tracks dans un WAV à partir des silences.
+
+    Retourne une liste de tuples :
+        [(start_ms, end_ms), ...]
+
+    Logique :
+    - silence tant que abs(sample) <= silence_threshold
+    - début de track au premier sample non silencieux
+    - fin de track lorsqu'on rencontre un silence d'au moins min_silence_ms
+    """
+
     data, sr = sf.read(input_filename)
 
+    # passage en mono
     if data.ndim > 1:
-        data = data.mean(axis=1)
+        data = np.mean(data, axis=1)
 
     data = data.astype(np.float32)
 
-    cut_points = [0]
-    current_cut_ms = 0
+    min_silence_samples = int(sr * min_silence_ms / 1000)
+    min_track_samples = int(sr * min_track_ms / 1000)
 
-    for i, track in enumerate(tracks[:-1], start=1):
-        theoretical_cut_ms = current_cut_ms + int(track["duration_ms"])
+    def is_silent(sample: float) -> bool:
+        return abs(sample) <= silence_threshold
 
-        adjusted_cut_ms = find_best_cut_with_moving_average(
-            signal=data,
-            sr=sr,
-            theoretical_cut_ms=theoretical_cut_ms,
-            window_ms=search_window_ms,
-            average_window_ms=average_window_ms,
-        )
+    tracks: list[tuple[int, int]] = []
 
-        print(
-            f"[CUT {i}] "
-            f"{format_duration_ms(theoretical_cut_ms)} -> "
-            f"{format_duration_ms(adjusted_cut_ms)} "
-            f"(delta={adjusted_cut_ms - theoretical_cut_ms} ms)"
-        )
+    in_track = False
+    track_start = 0
+    silence_run = 0
 
-        cut_points.append(adjusted_cut_ms)
-        current_cut_ms = adjusted_cut_ms
+    for i, sample in enumerate(data):
+        if is_silent(sample):
+            silence_run += 1
+        else:
+            silence_run = 0
 
-    total_duration_ms = int(len(data) * 1000 / sr)
-    cut_points.append(total_duration_ms)
+        if not in_track:
+            if not is_silent(sample):
+                in_track = True
+                track_start = i
+                silence_run = 0
+        else:
+            if silence_run >= min_silence_samples:
+                track_end = i - silence_run + 1
 
-    return cut_points
+                if track_end - track_start >= min_track_samples:
+                    start_ms = int(track_start * 1000 / sr)
+                    end_ms = int(track_end * 1000 / sr)
+                    #print (f"{ms_to_hms_dcm(start_ms)} {ms_to_hms_dcm(end_ms)}")
+                    tracks.append((start_ms, end_ms))
 
+                in_track = False
+                silence_run = 0
 
-# =========================
-# SPLIT WAV
-# =========================
+    # si le fichier se termine pendant une track
+    if in_track:
+        track_end = len(data)
+        if track_end - track_start >= min_track_samples:
+            start_ms = int(track_start * 1000 / sr)
+            end_ms = int(track_end * 1000 / sr)
+            tracks.append((start_ms, end_ms))
 
-def split(
-    tracks: list[dict],
+    return tracks
+
+def extract_wav(
     input_filename: str,
+    timestamps: list[tuple[int, int]],
+    filenames: list[str],
     output_dir: str = "data/output/wav",
 ) -> list[str]:
     input_path = Path(input_filename)
@@ -107,26 +91,32 @@ def split(
     if not input_path.exists():
         raise FileNotFoundError(f"Fichier audio introuvable : {input_path}")
 
+    if len(filenames) != len(timestamps):
+        raise ValueError(
+            "filenames doit contenir autant d'éléments que timestamps"
+        )
+
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    cut_points_ms = compute_cut_points_iterative(tracks, str(input_path))
-
     created_files: list[str] = []
-    total_tracks = len(tracks)
 
-    for i, track in enumerate(tracks, start=1):
-        start_ms = cut_points_ms[i - 1]
-        end_ms = cut_points_ms[i]
+    for i, ((start_ms, end_ms), filename) in enumerate(
+        zip(timestamps, filenames),
+        start=1,
+    ):
+        if start_ms < 0 or end_ms <= start_ms:
+            print(f"[SKIP {i}] plage invalide : ({start_ms}, {end_ms})")
+            continue
 
         start_sec = start_ms / 1000.0
         end_sec = end_ms / 1000.0
 
-        final_output_path = (out_dir / track["filename"]).with_suffix(".wav")
+        output_path = (out_dir / filename).with_suffix(".wav")
 
         print(
-            f"[{i}/{total_tracks}] Export WAV : "
-            f"[{format_duration_ms(start_ms)} - {format_duration_ms(end_ms)}] - "
-            f"{track['artist']} - {track['title']}"
+            f"[{i}] Export : "
+            f"{ms_to_hms_dcm(start_ms)} -> {ms_to_hms_dcm(end_ms)} "
+            f"| {output_path.name}"
         )
 
         cmd = [
@@ -136,7 +126,7 @@ def split(
             "-vn",
             "-af", f"atrim=start={start_sec}:end={end_sec},asetpts=PTS-STARTPTS",
             "-c:a", "pcm_s16le",
-            str(final_output_path),
+            str(output_path),
         ]
 
         subprocess.run(
@@ -146,223 +136,114 @@ def split(
             stderr=subprocess.DEVNULL,
         )
 
-        created_files.append(str(final_output_path))
+        created_files.append(str(output_path))
 
     return created_files
 
-
-# =========================
-# METADATA HELPERS
-# =========================
-
-def build_common_metadata_args(
-    track: dict,
-    track_number: int,
-    total_tracks: int,
-) -> list[str]:
-    metadata_args = [
-        "-metadata", f"title={track.get('title', '')}",
-        "-metadata", f"artist={track.get('artist', '')}",
-        "-metadata", f"album={track.get('album', '')}",
-        "-metadata", f"track={track_number}/{total_tracks}",
-    ]
-
-    if track.get("date"):
-        metadata_args += ["-metadata", f"date={track['date']}"]
-
-    if track.get("genre"):
-        metadata_args += ["-metadata", f"genre={track['genre']}"]
-
-    return metadata_args
-
-
-# =========================
-# CONVERT MP3
-# =========================
-
-def convert_wav_to_mp3(
-    wav_path: str,
-    mp3_path: str,
-    track: dict,
-    track_number: int,
-    total_tracks: int,
-    normalize: bool = True,
-):
-    cmd = [
-        "ffmpeg",
-        "-y",
-        "-i", wav_path,
-        "-vn",
-    ]
-
-    if normalize:
-        cmd += ["-af", "loudnorm=I=-14:TP=-1.5:LRA=11"]
-
-    cmd += [
-        "-acodec", "libmp3lame",
-        "-qscale:a", "0",
-        "-joint_stereo", "1",
-        "-id3v2_version", "3",
-        "-write_id3v1", "1",
-    ]
-
-    cmd += build_common_metadata_args(track, track_number, total_tracks)
-    cmd += [mp3_path]
-
-    subprocess.run(
-        cmd,
-        check=True,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-
-
-def convert_all_to_mp3(
-    wav_files: list[str],
-    tracks: list[dict],
-    output_dir: str = "data/output/mp3",
-    normalize: bool = True,
-) -> list[str]:
-    out_dir = Path(output_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    total_tracks = len(tracks)
-    mp3_files: list[str] = []
-
-    for i, (wav_file, track) in enumerate(zip(wav_files, tracks), start=1):
-        mp3_path = out_dir / Path(wav_file).with_suffix(".mp3").name
-
-        print(f"[MP3 {i}/{total_tracks}] {track['artist']} - {track['title']}")
-
-        convert_wav_to_mp3(
-            wav_path=wav_file,
-            mp3_path=str(mp3_path),
-            track=track,
-            track_number=i,
-            total_tracks=total_tracks,
-            normalize=normalize,
-        )
-
-        mp3_files.append(str(mp3_path))
-
-    return mp3_files
-
-
-# =========================
-# CONVERT FLAC
-# =========================
-
-def convert_wav_to_flac(
-    wav_path: str,
-    flac_path: str,
-    track: dict,
-    track_number: int,
-    total_tracks: int,
-):
-    cmd = [
-        "ffmpeg",
-        "-y",
-        "-i", wav_path,
-        "-vn",
-        "-c:a", "flac",
-        "-compression_level", "8",
-    ]
-
-    cmd += build_common_metadata_args(track, track_number, total_tracks)
-    cmd += [flac_path]
-
-    subprocess.run(
-        cmd,
-        check=True,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-
-
-def convert_all_to_flac(
-    wav_files: list[str],
-    tracks: list[dict],
-    output_dir: str = "data/output/flac",
-) -> list[str]:
-    out_dir = Path(output_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    total_tracks = len(tracks)
-    flac_files: list[str] = []
-
-    for i, (wav_file, track) in enumerate(zip(wav_files, tracks), start=1):
-        flac_path = out_dir / Path(wav_file).with_suffix(".flac").name
-
-        print(f"[FLAC {i}/{total_tracks}] {track['artist']} - {track['title']}")
-
-        convert_wav_to_flac(
-            wav_path=wav_file,
-            flac_path=str(flac_path),
-            track=track,
-            track_number=i,
-            total_tracks=total_tracks,
-        )
-
-        flac_files.append(str(flac_path))
-
-    return flac_files
-
-
-# =========================
-# FULL PIPELINE
-# =========================
-
-def process_mix(
-    tracks: list[dict],
-    input_file: str,
-    wav_output_dir: str = "data/output/wav",
-    mp3_output_dir: str = "data/output/mp3",
-    flac_output_dir: str = "data/output/flac",
-    generate_mp3: bool = True,
-    generate_flac: bool = True,
-    normalize_mp3: bool = True,
-) -> dict[str, list[str]]:
-
-    wav_files = split(
-        tracks=tracks,
-        input_filename=input_file,
-        output_dir=wav_output_dir,
-    )
-
-    result: dict[str, list[str]] = {
-        "wav": wav_files,
-        "mp3": [],
-        "flac": [],
-    }
-
-    if generate_mp3:
-        result["mp3"] = convert_all_to_mp3(
-            wav_files=wav_files,
-            tracks=tracks,
-            output_dir=mp3_output_dir,
-            normalize=normalize_mp3,
-        )
-
-    if generate_flac:
-        result["flac"] = convert_all_to_flac(
-            wav_files=wav_files,
-            tracks=tracks,
-            output_dir=flac_output_dir,
-        )
-
-    return result
-
-    import shutil
 from pathlib import Path
+import subprocess
 
 
-def clean_output_dirs(dirs: list[str]) -> None:
-    for d in dirs:
-        path = Path(d)
+def generate_mp3(
+    input_wav_dir: str,
+    output_mp3_dir: str,
+    normalize: bool = True,
+) -> list[str]:
+    in_dir = Path(input_wav_dir)
+    out_dir = Path(output_mp3_dir)
 
-        if path.exists():
-            shutil.rmtree(path)  # 🔥 supprime tout le dossier
+    if not in_dir.exists():
+        raise FileNotFoundError(f"Dossier introuvable : {in_dir}")
 
-        path.mkdir(parents=True, exist_ok=True)  # recrée propre
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-        print(f"Dossier nettoyé : {path}")
+    wav_files = sorted(in_dir.glob("*.wav"))
+
+    if not wav_files:
+        print("Aucun fichier WAV trouvé.")
+        return []
+
+    created_files = []
+
+    for i, wav_path in enumerate(wav_files, start=1):
+        mp3_path = (out_dir / wav_path.name).with_suffix(".mp3")
+
+        print(f"[MP3 {i}/{len(wav_files)}] {wav_path.name}")
+
+        cmd = [
+            "ffmpeg",
+            "-y",
+            "-i", str(wav_path),
+            "-vn",
+        ]
+
+        if normalize:
+            cmd += ["-af", "loudnorm=I=-14:TP=-1.5:LRA=11"]
+
+        cmd += [
+            "-acodec", "libmp3lame",
+            "-qscale:a", "0",  # qualité max VBR
+            "-joint_stereo", "1",
+            str(mp3_path),
+        ]
+
+        subprocess.run(
+            cmd,
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+
+        created_files.append(str(mp3_path))
+
+    return created_files
+
+from pathlib import Path
+import subprocess
+
+
+def generate_flac(
+    input_wav_dir: str,
+    output_flac_dir: str,
+) -> list[str]:
+    in_dir = Path(input_wav_dir)
+    out_dir = Path(output_flac_dir)
+
+    if not in_dir.exists():
+        raise FileNotFoundError(f"Dossier introuvable : {in_dir}")
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    wav_files = sorted(in_dir.glob("*.wav"))
+
+    if not wav_files:
+        print("Aucun fichier WAV trouvé.")
+        return []
+
+    created_files = []
+
+    for i, wav_path in enumerate(wav_files, start=1):
+        flac_path = (out_dir / wav_path.name).with_suffix(".flac")
+
+        print(f"[FLAC {i}/{len(wav_files)}] {wav_path.name}")
+
+        cmd = [
+            "ffmpeg",
+            "-y",
+            "-i", str(wav_path),
+            "-vn",
+            "-c:a", "flac",
+            "-compression_level", "8",  # max compression sans perte
+            str(flac_path),
+        ]
+
+        subprocess.run(
+            cmd,
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+
+        created_files.append(str(flac_path))
+
+    return created_files
