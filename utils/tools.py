@@ -1,5 +1,14 @@
 #utils/tools.py
 
+import os
+def delete_path(path: str):
+    import os, shutil
+
+    if os.path.isfile(path) or os.path.islink(path):
+        os.remove(path)
+    elif os.path.isdir(path):
+        shutil.rmtree(path)
+
 def format_duration_ms(duration_ms: int | None) -> str:
     if not duration_ms:
         return "0:00"

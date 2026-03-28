@@ -7,21 +7,11 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from utils.spotify import get_tracks
-from utils.audio import detect_tracks, extract_wav, generate_mp3, generate_flac
+from utils.tools import delete_path
+from utils.audio import detect_tracks, save_to_labels, save_to_json, extract_wav, generate_mp3, generate_flac
 
 
 load_dotenv()
-
-
-def save_to_json(tracks: list[dict], filename: str) -> None:
-    output_path = Path(filename)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(tracks, f, ensure_ascii=False, indent=2)
-
-    print(f"JSON généré : {filename}")
-
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Split WAV based on silence + Spotify playlist")
@@ -31,6 +21,7 @@ def main() -> int:
 
     INPUT_FILE = "data/input/input.wav"
     JSON_FILE = "data/output/tracks.json"
+    LABEL_FILE = "data/output/labels.txt"
 
     OUTPUT_WAV_DIR = "data/output/wav"
     OUTPUT_MP3_DIR = "data/output/mp3"
@@ -47,10 +38,23 @@ def main() -> int:
         return 1
 
     try:
+        delete_path(JSON_FILE)
+        delete_path(LABEL_FILE)
+        delete_path(OUTPUT_WAV_DIR)
+        delete_path(OUTPUT_MP3_DIR)
+        delete_path(OUTPUT_FLAC_DIR)
+        
+        print(f"Recovering Data ...")
         tracks = get_tracks(client_id, client_secret, args.playlist)
         filenames = [track["filename"] for track in tracks]
-        detections = detect_tracks(INPUT_FILE)
         save_to_json(tracks, JSON_FILE)
+        print(f"- {filenames}")
+
+        print(f"Detecting Silences")
+        detections = detect_tracks(INPUT_FILE)
+        save_to_labels(detections, LABEL_FILE)
+        print(f"- {detections}")
+
 
         extract_wav(
             input_filename=INPUT_FILE,
