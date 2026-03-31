@@ -3,10 +3,53 @@
 import base64
 import requests
 from urllib.parse import urlparse
+
+
 from utils.tools import format_duration_ms
 from utils.text import clean_album, clean_title, build_filename
 
-def get_access_token(client_id: str, client_secret: str) -> str:
+class SpotifyAccess :
+    def __init__(self, client_id, client_secret, playlist_url):
+        self.client_id = client_id 
+        self.client_secret = client_secret
+        self.playlist_url = playlist_url
+
+    def _get_access_token():
+        auth_string = f"{self.client_id}:{self.client_secret}"
+        auth_b64 = base64.b64encode(auth_string.encode()).decode()
+
+        response = requests.post(
+            "https://accounts.spotify.com/api/token",
+            headers={
+                "Authorization": f"Basic {auth_b64}",
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            data={"grant_type": "client_credentials"},
+            timeout=30,
+        )
+        response.raise_for_status()
+        return response.json()["access_token"]
+
+    def parse_playlist_id(playlist_url: str) -> str:
+        path = urlparse(playlist_url).path
+        parts = [p for p in path.split("/") if p]
+        if len(parts) >= 2 and parts[0] == "playlist":
+            return parts[1]
+        raise ValueError("URL de playlist Spotify invalide")
+    
+    get_tracks():
+        playlist_id = self.parse_playlist_id(playlist)
+        token = self.get_access_token(client_id, client_secret)
+        return 1
+        #return get_playlist_tracks(playlist_id, token)
+
+@classmethod
+def create_with_tracks(cls, client_id, client_secret, playlist_url):
+    obj = cls(client_id, client_secret, playlist_url)
+    obj.retrieve()
+    return obj
+
+def _get_access_token(client_id: str, client_secret: str) -> str:
     auth_string = f"{client_id}:{client_secret}"
     auth_b64 = base64.b64encode(auth_string.encode()).decode()
 
@@ -22,12 +65,7 @@ def get_access_token(client_id: str, client_secret: str) -> str:
     response.raise_for_status()
     return response.json()["access_token"]
 
-def extract_playlist_id(playlist_url: str) -> str:
-    path = urlparse(playlist_url).path
-    parts = [p for p in path.split("/") if p]
-    if len(parts) >= 2 and parts[0] == "playlist":
-        return parts[1]
-    raise ValueError("URL de playlist Spotify invalide")
+
 
 def get_playlist_tracks(playlist_id: str, access_token: str) -> list[dict]:
     tracks = []
@@ -67,9 +105,9 @@ def get_playlist_tracks(playlist_id: str, access_token: str) -> list[dict]:
                 "artist": artists,
                 "title": title,
                 "album": album,
+                "spotify_link": spotify_link,
                 "duration_ms": duration_ms,
                 "duration": duration,
-                "spotify_link": spotify_link,
                 "filename": filename,
             })
 
@@ -77,8 +115,3 @@ def get_playlist_tracks(playlist_id: str, access_token: str) -> list[dict]:
         params = None
 
     return tracks
-
-def get_tracks(client_id:str, client_secret:str, playlist:str):
-    playlist_id = extract_playlist_id(playlist)
-    token = get_access_token(client_id, client_secret)
-    return get_playlist_tracks(playlist_id, token)

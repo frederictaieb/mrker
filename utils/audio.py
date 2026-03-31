@@ -111,7 +111,7 @@ def save_to_labels(
             end_s = end_ms / 1000
             label = f"{prefix} {i}"
             f.write(f"{start_s:.3f}\t{end_s:.3f}\t{label}\n")
-    print(f"Labels txt généré : {filename}")
+    print(f"Labels txt généré : {out_path}")
 
 
 def detect_tracks(

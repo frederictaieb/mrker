@@ -1,9 +1,11 @@
 certifi==2026.2.25
 cffi==2.0.0
 charset-normalizer==3.4.6
+et_xmlfile==2.0.0
 idna==3.11
 mutagen==1.47.0
 numpy==2.4.3
+openpyxl==3.1.5
 pycparser==3.0
 pydub==0.25.1
 python-dotenv==1.2.2
