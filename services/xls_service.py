@@ -1,13 +1,14 @@
 from openpyxl import Workbook
+from pathlib import Path
 from pprint import pformat
+from utils.file import delete_path
 
 class XlsService:
-    def __init__(self, xls_file="data/infos/markers.xlsx", txt_file="data/infos/markers.txt", markers=None, filenames=None):
-        self.xls_file = xls_file
-        self.txt_file = txt_file
+    def __init__(self, markers=None, filenames=None):
+        self.xls_file = "data/infos/markers.xlsx"
+        self.txt_file = "data/infos/markers.txt"
         self.filenames = filenames
         self.markers = markers
-        pass
 
     def same_len(self):
         return len(self.filenames) == len(self.markers)
@@ -36,16 +37,27 @@ class XlsService:
                 filename = self.filenames[i]
                 f.write(f"{start}\t{end}\t{filename}\n")
 
-    @classmethod 
-    def create(cls, xls_file, txt_file, markers, filenames):
-        obj = cls(xls_file, txt_file, markers, filenames)
-        obj._generate_xls()
-        obj._generate_txt()
-        return obj
+
+    def generate(self):
+        self._generate_xls()
+        self._generate_txt()
+
+    def is_generated(self):
+        xls_file_path = Path(self.xls_file)
+        txt_file_path = Path(self.txt_file)
+        return xls_file_path.is_file() and txt_file_path.is_file()
+
+    def reset(self):
+        if self.is_generated():
+            delete_path(self.xls_file)
+            delete_path(self.txt_file)
+            logger.info("Fichiers supprimés")
+        else: 
+            logger.info("Erreur")
+
 
     def __str__(self):
         return f"{self.xls_file}"
-        pass
 
     def __repr__(self):
         return self.__str__()

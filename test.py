@@ -24,13 +24,19 @@ sp_service = SpotifyService.create_with_tracks(
 
 as_service = AudioService.create_with_detection()
 
-xls_service = XlsService.create(
-    xls_file = "data/infos/markers.xls",
-    txt_file = "data/infos/markers.txt",
+xls_service = XlsService(
     markers = as_service.get_markers(),
     filenames = sp_service.get_filenames()
 )
 
-print(sp_service)
-print(as_service)
+if not xls_service.same_len():
+    xls_service.generate()
+    logger.info(f"Counts of Filenames and Markers are different.")
+    logger.info(f"XLS and TXT files generated.")
+    exit
+
+logger.info(f"Counts of Filenames and Marker are the same.")
+logger.info(f"Generating WAV, FLAC and MP3...")
+as_service.generate_music(sp_service.get_filenames())
+
 
