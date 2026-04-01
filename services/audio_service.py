@@ -52,7 +52,9 @@ class AudioService:
                     if track_end - track_start >= min_track_samples:
                         start_ms = int(track_start * 1000 / sr)
                         end_ms = int(track_end * 1000 / sr)
-                        markers.append((start_ms, end_ms))
+                        start_s = start_ms / 1000
+                        end_s = end_ms / 1000
+                        markers.append((start_s, end_s))
 
                     in_track = False
                     silence_run = 0
@@ -63,7 +65,9 @@ class AudioService:
             if track_end - track_start >= min_track_samples:
                 start_ms = int(track_start * 1000 / sr)
                 end_ms = int(track_end * 1000 / sr)
-                markers.append((start_ms, end_ms))
+                start_s = start_ms / 1000
+                end_s = end_ms / 1000
+                markers.append((start_s, end_s))
 
         self.markers = markers
         return markers

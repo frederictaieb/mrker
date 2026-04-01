@@ -85,6 +85,7 @@ class SpotifyService:
                 raw_album = track.get("album", {}).get("name", "")
                 spotify_link = track.get("external_urls", {}).get("spotify", "")
                 duration_ms = track.get("duration_ms", 0)
+                duration_s = duration_ms / 1000
                 duration = format_duration_ms(duration_ms)
 
                 album = clean_album(raw_album)
@@ -97,6 +98,7 @@ class SpotifyService:
                     "album": album,
                     "spotify_link": spotify_link,
                     "duration_ms": duration_ms,
+                    "duration_s": duration_s,
                     "duration": duration,
                     "filename": filename,
                 })

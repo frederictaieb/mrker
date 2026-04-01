@@ -25,8 +25,8 @@ sp_service = SpotifyService.create_with_tracks(
 as_service = AudioService.create_with_detection()
 
 xls_service = XlsService.create(
-    xls_file = "data/infos/makers.xls",
-    txt_file = "data/infos/makers.txt",
+    xls_file = "data/infos/markers.xls",
+    txt_file = "data/infos/markers.txt",
     markers = as_service.get_markers(),
     filenames = sp_service.get_filenames()
 )

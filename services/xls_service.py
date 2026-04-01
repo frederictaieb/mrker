@@ -21,8 +21,8 @@ class XlsService:
         ws = wb.active
 
         for i, (start, end) in enumerate(self.markers, start=1):
-            ws.cell(row=i, column=1, value=start/1000)
-            ws.cell(row=i, column=2, value=end/1000)
+            ws.cell(row=i, column=1, value=start)
+            ws.cell(row=i, column=2, value=end)
 
         for i, filename in enumerate(self.filenames, start=1):
             ws.cell(row=i, column=3, value=filename)
@@ -34,7 +34,7 @@ class XlsService:
             for i in range(self.min_len()):
                 start, end = self.markers[i] 
                 filename = self.filenames[i]
-                f.write(f"{start/1000}\t{end/1000}\t{filename}\n")
+                f.write(f"{start}\t{end}\t{filename}\n")
 
     @classmethod 
     def create(cls, xls_file, txt_file, markers, filenames):
