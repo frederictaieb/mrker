@@ -1,8 +1,9 @@
 import os
 import argparse
 from dotenv import load_dotenv
-from services.spotify_services import SpotifyService
-from services.audio_services import AudioService
+from services.spotify_service import SpotifyService
+from services.audio_service import AudioService
+from services.xls_service import XlsService
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -22,6 +23,13 @@ sp_service = SpotifyService.create_with_tracks(
 )
 
 as_service = AudioService.create_with_detection()
+
+xls_service = XlsService.create(
+    xls_file = "data/infos/makers.xls",
+    txt_file = "data/infos/makers.txt",
+    markers = as_service.get_markers(),
+    filenames = sp_service.get_filenames()
+)
 
 print(sp_service)
 print(as_service)

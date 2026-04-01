@@ -6,9 +6,9 @@ from pprint import pformat
 class AudioService:
     def __init__(self, audio_filename: str = "data/input/input.wav"):
         self.audio_filename = audio_filename
-        self.tracks = []
+        self.markers = []
 
-    def _detect_tracks(
+    def _detect_markers(
         self,
         silence_threshold: float = 0.01,
         min_silence_ms: int = 300,
@@ -25,7 +25,7 @@ class AudioService:
         min_silence_samples = int(sr * min_silence_ms / 1000)
         min_track_samples = int(sr * min_track_ms / 1000)
 
-        tracks = []
+        markers = []
 
         def is_silent(sample: float) -> bool:
             return abs(sample) <= silence_threshold
@@ -52,7 +52,7 @@ class AudioService:
                     if track_end - track_start >= min_track_samples:
                         start_ms = int(track_start * 1000 / sr)
                         end_ms = int(track_end * 1000 / sr)
-                        tracks.append((start_ms, end_ms))
+                        markers.append((start_ms, end_ms))
 
                     in_track = False
                     silence_run = 0
@@ -63,22 +63,25 @@ class AudioService:
             if track_end - track_start >= min_track_samples:
                 start_ms = int(track_start * 1000 / sr)
                 end_ms = int(track_end * 1000 / sr)
-                tracks.append((start_ms, end_ms))
+                markers.append((start_ms, end_ms))
 
-        self.tracks = tracks
-        return tracks
+        self.markers = markers
+        return markers
 
     @classmethod
     def create_with_detection(cls):
         obj = cls()
-        obj._detect_tracks()
+        obj._detect_markers()
         return obj
 
+    def get_markers(self):
+        return self.markers
+
     def count(self):
-        return len(self.tracks)
+        return len(self.markers)
 
     def __str__(self):
-        return f"{len(self.tracks)} tracks:\n{pformat(self.tracks)}" 
+        return f"{len(self.markers)} markers:\n{pformat(self.markers)}" 
 
     def __repr__(self):
-        return f"AudioService(audio_filename={self.audio_filename!r}, tracks={len(self.tracks)})"
+        return f"AudioService(audio_filename={self.audio_filename!r}, markers={len(self.markers)})"
