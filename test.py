@@ -16,7 +16,7 @@ parser = argparse.ArgumentParser(description="Split WAV based on silence + Spoti
 parser.add_argument("playlist", help="URL ou ID de la playlist Spotify")
 args = parser.parse_args()
 
-sp_service = SpotifyService.create_with_tracks(
+sp_service = SpotifyService.create_with_data(
     SPOTIFY_CLIENT_ID, 
     SPOTIFY_CLIENT_SECRET,
     args.playlist
@@ -37,6 +37,6 @@ if not xls_service.same_len():
 
 logger.info(f"Counts of Filenames and Marker are the same.")
 logger.info(f"Generating WAV, FLAC and MP3...")
-as_service.generate_music(sp_service.get_filenames())
+as_service.generate_tracks(sp_service.get_tracks_data())
 
 

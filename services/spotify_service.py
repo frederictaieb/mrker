@@ -18,7 +18,7 @@ class SpotifyService:
         self.playlist_url = playlist_url
         self.playlist_id = None
         self.access_token = None
-        self.tracks = []
+        self.tracks_data = []
         
 
     def _get_access_token(self):
@@ -57,8 +57,8 @@ class SpotifyService:
         raise ValueError("URL de playlist Spotify invalide")
 
 
-    def _get_playlist_tracks(self) -> list[dict]:
-        tracks = []
+    def _get_playlist_data(self) -> list[dict]:
+        tracks_data = []
         url = f"https://api.spotify.com/v1/playlists/{self._parse_playlist_id()}/tracks"
         headers = {"Authorization": f"Bearer {self._get_access_token()}"}
 
@@ -92,7 +92,7 @@ class SpotifyService:
                 title = clean_title(raw_title, raw_album)
                 filename = build_filename(artists, album, title)
 
-                tracks.append({
+                tracks_data.append({
                     "artist": artists,
                     "title": title,
                     "album": album,
@@ -106,32 +106,37 @@ class SpotifyService:
             url = data.get("next")
             params = None
 
-        return tracks
+        return tracks_data
 
 
     def _retrieve(self):
-        self.tracks = self._get_playlist_tracks()
-        return self.tracks
+        self.tracks_data = self._get_playlist_data()
+        return self.tracks_data
+
+    def get_tracks_data(self):
+        if not self.tracks_data:
+            self.retrieve()
+        return self.tracks_data
 
     def get_filenames(self):
-        if not self.tracks:
+        if not self.tracks_data:
             self._retrieve()
-        return [track["filename"] for track in self.tracks]
+        return [track["filename"] for track in self.tracks_data]
 
     @classmethod
-    def create_with_tracks(cls, client_id, client_secret, playlist_url):
+    def create_with_data(cls, client_id, client_secret, playlist_url):
         obj = cls(client_id, client_secret, playlist_url)
         obj._retrieve()
         return obj
 
     def count(self):
-        return(len(filenames))
+        len(self.tracks_data)
 
     def __str__(self):
-        filenames = [track["filename"] for track in self.tracks]
-        return f"{len(filenames)} tracks:\n{pformat(filenames)}"
+        filenames = [track["filename"] for track in self.tracks_data]
+        return f"{len(filenames)} tracks_data:\n{pformat(filenames)}"
 
 
     def __repr__(self):
-        return f"SpotifyService(playlist_url={self.playlist_url!r}, tracks={len(self.tracks)})"
+        return f"SpotifyService(playlist_url={self.playlist_url!r}, tracks_data={len(self.tracks_data)})"
     
