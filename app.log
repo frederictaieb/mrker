@@ -1889,3 +1889,245 @@
 2026-04-04 19:15:47,469 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.flac
 2026-04-04 19:15:48,313 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.mp3
 2026-04-04 19:15:56,450 - services.xls_service - INFO - Erreur
+2026-04-04 19:48:43,487 - __main__ - INFO - Creating Spotify Service from pasted URL
+2026-04-04 19:48:43,487 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 19:48:43,487 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 19:48:44,495 - __main__ - INFO - Creating Audio Service
+2026-04-04 19:48:44,527 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 19:49:17,962 - __main__ - INFO - Creating XLS Service
+2026-04-04 19:49:17,964 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-04 19:49:17,964 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-04 19:49:17,964 - services.audio_service - INFO - Export : | Fabbro [Find me] Find me.wav
+2026-04-04 19:49:18,070 - services.audio_service - INFO - Export : | Fabbro [Find me] Find me.flac
+2026-04-04 19:49:19,028 - services.audio_service - INFO - Export : | Fabbro [Find me] Find me.mp3
+2026-04-04 19:49:28,298 - services.audio_service - INFO - Export : | Feid, Young Miko [FERXXOCALIPSIS] CLASSY 101.wav
+2026-04-04 19:49:28,380 - services.audio_service - INFO - Export : | Feid, Young Miko [FERXXOCALIPSIS] CLASSY 101.flac
+2026-04-04 19:49:29,104 - services.audio_service - INFO - Export : | Feid, Young Miko [FERXXOCALIPSIS] CLASSY 101.mp3
+2026-04-04 19:49:35,969 - services.audio_service - INFO - Export : | Grand Corps Malade, Camille Lellouche [MESDAMES deluxe] Mais je t'aime.wav
+2026-04-04 19:49:36,070 - services.audio_service - INFO - Export : | Grand Corps Malade, Camille Lellouche [MESDAMES deluxe] Mais je t'aime.flac
+2026-04-04 19:49:37,069 - services.audio_service - INFO - Export : | Grand Corps Malade, Camille Lellouche [MESDAMES deluxe] Mais je t'aime.mp3
+2026-04-04 19:49:46,618 - services.audio_service - INFO - Export : | HAAi, Skin On Skin +2 [USB] the floor - HAAi remix.wav
+2026-04-04 19:49:46,723 - services.audio_service - INFO - Export : | HAAi, Skin On Skin +2 [USB] the floor - HAAi remix.flac
+2026-04-04 19:49:47,577 - services.audio_service - INFO - Export : | HAAi, Skin On Skin +2 [USB] the floor - HAAi remix.mp3
+2026-04-04 19:49:55,728 - services.audio_service - INFO - Export : | Hildur Gudnadottir [Folk faer andlit] Folk faer andlit.wav
+2026-04-04 19:49:55,848 - services.audio_service - INFO - Export : | Hildur Gudnadottir [Folk faer andlit] Folk faer andlit.flac
+2026-04-04 19:49:56,976 - services.audio_service - INFO - Export : | Hildur Gudnadottir [Folk faer andlit] Folk faer andlit.mp3
+2026-04-04 19:50:08,045 - services.audio_service - INFO - Export : | Helene Vogelsinger [Reminiscence] Reminiscence.wav
+2026-04-04 19:50:08,198 - services.audio_service - INFO - Export : | Helene Vogelsinger [Reminiscence] Reminiscence.flac
+2026-04-04 19:50:10,183 - services.audio_service - INFO - Export : | Helene Vogelsinger [Reminiscence] Reminiscence.mp3
+2026-04-04 19:50:30,086 - services.audio_service - INFO - Export : | Jed Kurzel [The Mustang Original Motion Picture Soundtrack] Horse.wav
+2026-04-04 19:50:30,237 - services.audio_service - INFO - Export : | Jed Kurzel [The Mustang Original Motion Picture Soundtrack] Horse.flac
+2026-04-04 19:50:30,970 - services.audio_service - INFO - Export : | Jed Kurzel [The Mustang Original Motion Picture Soundtrack] Horse.mp3
+2026-04-04 19:50:37,919 - services.audio_service - INFO - Export : | Jocelyn Pook [Untold Things] Ave Maria.wav
+2026-04-04 19:50:38,080 - services.audio_service - INFO - Export : | Jocelyn Pook [Untold Things] Ave Maria.flac
+2026-04-04 19:50:39,325 - services.audio_service - INFO - Export : | Jocelyn Pook [Untold Things] Ave Maria.mp3
+2026-04-04 19:50:51,916 - services.audio_service - INFO - Export : | Jocelyn Pook [The Wife Original Motion Picture Soundtrack] The Wife.wav
+2026-04-04 19:50:52,081 - services.audio_service - INFO - Export : | Jocelyn Pook [The Wife Original Motion Picture Soundtrack] The Wife.flac
+2026-04-04 19:50:52,969 - services.audio_service - INFO - Export : | Jocelyn Pook [The Wife Original Motion Picture Soundtrack] The Wife.mp3
+2026-04-04 19:51:01,365 - services.audio_service - INFO - Export : | Jocelyn Pook [Flood] Masked Ball - 1999 Extended Mix.wav
+2026-04-04 19:51:01,551 - services.audio_service - INFO - Export : | Jocelyn Pook [Flood] Masked Ball - 1999 Extended Mix.flac
+2026-04-04 19:51:02,870 - services.audio_service - INFO - Export : | Jocelyn Pook [Flood] Masked Ball - 1999 Extended Mix.mp3
+2026-04-04 19:51:15,834 - services.audio_service - INFO - Export : | Jocelyn Pook [Deluge] Backwards Priests.wav
+2026-04-04 19:51:16,026 - services.audio_service - INFO - Export : | Jocelyn Pook [Deluge] Backwards Priests.flac
+2026-04-04 19:51:16,830 - services.audio_service - INFO - Export : | Jocelyn Pook [Deluge] Backwards Priests.mp3
+2026-04-04 19:51:24,496 - services.audio_service - INFO - Export : | Justin Hurwitz [First Man Original Motion Picture Soundtrack] Quarantine.wav
+2026-04-04 19:51:24,679 - services.audio_service - INFO - Export : | Justin Hurwitz [First Man Original Motion Picture Soundtrack] Quarantine.flac
+2026-04-04 19:51:25,190 - services.audio_service - INFO - Export : | Justin Hurwitz [First Man Original Motion Picture Soundtrack] Quarantine.mp3
+2026-04-04 19:51:29,937 - services.audio_service - INFO - Export : | La Zarra [Der Himmel] Johny.wav
+2026-04-04 19:51:30,129 - services.audio_service - INFO - Export : | La Zarra [Der Himmel] Johny.flac
+2026-04-04 19:51:30,872 - services.audio_service - INFO - Export : | La Zarra [Der Himmel] Johny.mp3
+2026-04-04 19:51:37,889 - services.audio_service - INFO - Export : | Leblanc [No Mercy] Troublemaker.wav
+2026-04-04 19:51:38,083 - services.audio_service - INFO - Export : | Leblanc [No Mercy] Troublemaker.flac
+2026-04-04 19:51:38,724 - services.audio_service - INFO - Export : | Leblanc [No Mercy] Troublemaker.mp3
+2026-04-04 19:51:44,654 - services.audio_service - INFO - Export : | Lorenz Dangel [TIDES] Kiss of Life.wav
+2026-04-04 19:51:44,860 - services.audio_service - INFO - Export : | Lorenz Dangel [TIDES] Kiss of Life.flac
+2026-04-04 19:51:45,368 - services.audio_service - INFO - Export : | Lorenz Dangel [TIDES] Kiss of Life.mp3
+2026-04-04 19:51:50,660 - services.audio_service - INFO - Export : | Mario Pelchat, Anne Sila [Duos de mes 60 ans] Je pense encore a toi.wav
+2026-04-04 19:51:50,880 - services.audio_service - INFO - Export : | Mario Pelchat, Anne Sila [Duos de mes 60 ans] Je pense encore a toi.flac
+2026-04-04 19:51:51,879 - services.audio_service - INFO - Export : | Mario Pelchat, Anne Sila [Duos de mes 60 ans] Je pense encore a toi.mp3
+2026-04-04 19:52:01,613 - services.audio_service - INFO - Export : | Martin Roth [Ambient House] Java.wav
+2026-04-04 19:52:01,866 - services.audio_service - INFO - Export : | Martin Roth [Ambient House] Java.flac
+2026-04-04 19:52:03,429 - services.audio_service - INFO - Export : | Martin Roth [Ambient House] Java.mp3
+2026-04-04 19:52:19,014 - services.audio_service - INFO - Export : | Natacha Atlas, Jocelyn Pook +10 [Pook Desh] Desh Hallelujah.wav
+2026-04-04 19:52:19,270 - services.audio_service - INFO - Export : | Natacha Atlas, Jocelyn Pook +10 [Pook Desh] Desh Hallelujah.flac
+2026-04-04 19:52:20,272 - services.audio_service - INFO - Export : | Natacha Atlas, Jocelyn Pook +10 [Pook Desh] Desh Hallelujah.mp3
+2026-04-04 19:52:29,961 - services.audio_service - INFO - Export : | Peter Ries [Quiet Pages] Fading Day.wav
+2026-04-04 19:52:30,213 - services.audio_service - INFO - Export : | Peter Ries [Quiet Pages] Fading Day.flac
+2026-04-04 19:52:30,752 - services.audio_service - INFO - Export : | Peter Ries [Quiet Pages] Fading Day.mp3
+2026-04-04 19:52:35,813 - services.audio_service - INFO - Export : | RAYE [Fly Me to the Moon] Fly Me to the Moon.wav
+2026-04-04 19:52:36,087 - services.audio_service - INFO - Export : | RAYE [Fly Me to the Moon] Fly Me to the Moon.flac
+2026-04-04 19:52:36,807 - services.audio_service - INFO - Export : | RAYE [Fly Me to the Moon] Fly Me to the Moon.mp3
+2026-04-04 19:52:43,564 - services.xls_service - INFO - Erreur
+2026-04-04 19:57:23,475 - __main__ - INFO - 40 - Creating Spotify Service from pasted URL
+2026-04-04 19:57:23,476 - services.spotify_service - INFO - 49 - Parsing URL to get playlist ID...
+2026-04-04 19:57:23,476 - services.spotify_service - INFO - 28 - Getting access token from Spotify...
+2026-04-04 19:57:24,296 - __main__ - INFO - 47 - Creating Audio Service
+2026-04-04 19:57:24,352 - services.audio_service - INFO - 170 - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 19:57:46,670 - __main__ - INFO - 51 - Creating XLS Service
+2026-04-04 19:57:46,671 - __main__ - INFO - 58 - Counts of Filenames and Marker are the same.
+2026-04-04 19:57:46,672 - __main__ - INFO - 59 - Generating WAV, FLAC and MP3...
+2026-04-04 19:57:46,672 - services.audio_service - INFO - 98 - Export : | Fabbro [Find me] Find me.wav
+2026-04-04 19:57:46,765 - services.audio_service - INFO - 98 - Export : | Fabbro [Find me] Find me.flac
+2026-04-04 19:57:58,850 - __main__ - INFO - 40 - Creating Spotify Service from pasted URL
+2026-04-04 19:57:58,851 - services.spotify_service - INFO - 49 - Parsing URL to get playlist ID...
+2026-04-04 19:57:58,851 - services.spotify_service - INFO - 28 - Getting access token from Spotify...
+2026-04-04 19:57:59,716 - __main__ - INFO - 47 - Creating Audio Service
+2026-04-04 19:57:59,719 - services.audio_service - INFO - 170 - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 19:58:21,154 - __main__ - INFO - 51 - Creating XLS Service
+2026-04-04 19:58:21,154 - __main__ - INFO - 58 - Counts of Filenames and Marker are the same.
+2026-04-04 19:58:21,154 - __main__ - INFO - 59 - Generating WAV, FLAC and MP3...
+2026-04-04 19:58:21,155 - services.audio_service - INFO - 98 - Export : | RAYE, Hans Zimmer [Click Clack Symphony. feat. Hans Zimmer] Click Clack Symphony.wav
+2026-04-04 19:58:21,262 - services.audio_service - INFO - 98 - Export : | RAYE, Hans Zimmer [Click Clack Symphony. feat. Hans Zimmer] Click Clack Symphony.flac
+2026-04-04 19:58:22,358 - services.audio_service - INFO - 98 - Export : | RAYE, Hans Zimmer [Click Clack Symphony. feat. Hans Zimmer] Click Clack Symphony.mp3
+2026-04-04 19:58:33,037 - services.audio_service - INFO - 98 - Export : | Romy, HAAi [Love Who You Love HAAi Remix] Love Who You Love - HAAi Remix.wav
+2026-04-04 19:58:33,181 - services.audio_service - INFO - 98 - Export : | Romy, HAAi [Love Who You Love HAAi Remix] Love Who You Love - HAAi Remix.flac
+2026-04-04 19:58:34,637 - services.audio_service - INFO - 98 - Export : | Romy, HAAi [Love Who You Love HAAi Remix] Love Who You Love - HAAi Remix.mp3
+2026-04-04 19:58:48,868 - services.audio_service - INFO - 98 - Export : | Roque Banos [In The Heart Of The Sea Original Motion Picture] The White Whale Chant.wav
+2026-04-04 19:58:48,995 - services.audio_service - INFO - 98 - Export : | Roque Banos [In The Heart Of The Sea Original Motion Picture] The White Whale Chant.flac
+2026-04-04 19:58:49,986 - services.audio_service - INFO - 98 - Export : | Roque Banos [In The Heart Of The Sea Original Motion Picture] The White Whale Chant.mp3
+2026-04-04 19:58:59,773 - services.audio_service - INFO - 98 - Export : | Sevdaliza, Villano Antillano +1 [HEROINA] Ride or Die, Pt. 2.wav
+2026-04-04 19:58:59,889 - services.audio_service - INFO - 98 - Export : | Sevdaliza, Villano Antillano +1 [HEROINA] Ride or Die, Pt. 2.flac
+2026-04-04 19:59:00,488 - services.audio_service - INFO - 98 - Export : | Sevdaliza, Villano Antillano +1 [HEROINA] Ride or Die, Pt. 2.mp3
+2026-04-04 19:59:06,051 - services.audio_service - INFO - 98 - Export : | The Divine [Project Hail Mary Main Theme Epic Version] Project Hail Mary Main Theme - Epic Version.wav
+2026-04-04 19:59:06,164 - services.audio_service - INFO - 98 - Export : | The Divine [Project Hail Mary Main Theme Epic Version] Project Hail Mary Main Theme - Epic Version.flac
+2026-04-04 19:59:06,821 - services.audio_service - INFO - 98 - Export : | The Divine [Project Hail Mary Main Theme Epic Version] Project Hail Mary Main Theme - Epic Version.mp3
+2026-04-04 19:59:13,040 - services.audio_service - INFO - 98 - Export : | The Kiffness [Mango Pineapple Banana Watermelon] Mango Pineapple Banana Watermelon.wav
+2026-04-04 19:59:13,168 - services.audio_service - INFO - 98 - Export : | The Kiffness [Mango Pineapple Banana Watermelon] Mango Pineapple Banana Watermelon.flac
+2026-04-04 19:59:13,792 - services.audio_service - INFO - 98 - Export : | The Kiffness [Mango Pineapple Banana Watermelon] Mango Pineapple Banana Watermelon.mp3
+2026-04-04 19:59:19,690 - services.audio_service - INFO - 98 - Export : | Tony K, Reem [Home] Home.wav
+2026-04-04 19:59:19,814 - services.audio_service - INFO - 98 - Export : | Tony K, Reem [Home] Home.flac
+2026-04-04 19:59:20,367 - services.audio_service - INFO - 98 - Export : | Tony K, Reem [Home] Home.mp3
+2026-04-04 19:59:25,609 - services.audio_service - INFO - 98 - Export : | Uno Helmersson, Mari Samuelsen +3 [Nordic Noir] Timelapse.wav
+2026-04-04 19:59:25,743 - services.audio_service - INFO - 98 - Export : | Uno Helmersson, Mari Samuelsen +3 [Nordic Noir] Timelapse.flac
+2026-04-04 19:59:26,339 - services.audio_service - INFO - 98 - Export : | Uno Helmersson, Mari Samuelsen +3 [Nordic Noir] Timelapse.mp3
+2026-04-04 19:59:32,022 - services.audio_service - INFO - 98 - Export : | veneris [Devils Caprice] Devils Caprice.wav
+2026-04-04 19:59:32,151 - services.audio_service - INFO - 98 - Export : | veneris [Devils Caprice] Devils Caprice.flac
+2026-04-04 19:59:32,508 - services.audio_service - INFO - 98 - Export : | veneris [Devils Caprice] Devils Caprice.mp3
+2026-04-04 19:59:35,655 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Notre panthere de la foret.wav
+2026-04-04 19:59:35,794 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Notre panthere de la foret.flac
+2026-04-04 19:59:36,189 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Notre panthere de la foret.mp3
+2026-04-04 19:59:39,840 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La foret qui chante.wav
+2026-04-04 19:59:40,002 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La foret qui chante.flac
+2026-04-04 19:59:40,786 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La foret qui chante.mp3
+2026-04-04 19:59:48,286 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La nuit du cerf.wav
+2026-04-04 19:59:48,458 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La nuit du cerf.flac
+2026-04-04 19:59:49,384 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La nuit du cerf.mp3
+2026-04-04 19:59:58,377 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les arbres ecoutent les oiseaux.wav
+2026-04-04 19:59:58,552 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les arbres ecoutent les oiseaux.flac
+2026-04-04 19:59:59,283 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les arbres ecoutent les oiseaux.mp3
+2026-04-04 20:00:06,420 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Presences invisibles.wav
+2026-04-04 20:00:06,592 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Presences invisibles.flac
+2026-04-04 20:00:07,026 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Presences invisibles.mp3
+2026-04-04 20:00:11,065 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les plongeons.wav
+2026-04-04 20:00:11,239 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les plongeons.flac
+2026-04-04 20:00:11,656 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les plongeons.mp3
+2026-04-04 20:00:15,399 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Norvege.wav
+2026-04-04 20:00:15,567 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Norvege.flac
+2026-04-04 20:00:15,880 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Norvege.mp3
+2026-04-04 20:00:18,646 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Comme un mirage.wav
+2026-04-04 20:00:18,829 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Comme un mirage.flac
+2026-04-04 20:00:19,282 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Comme un mirage.mp3
+2026-04-04 20:00:23,554 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Lynx.wav
+2026-04-04 20:00:23,757 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Lynx.flac
+2026-04-04 20:00:24,329 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Lynx.mp3
+2026-04-04 20:00:29,719 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Deer.wav
+2026-04-04 20:00:29,924 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Deer.flac
+2026-04-04 20:00:30,518 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Deer.mp3
+2026-04-04 20:00:36,190 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Fog Blanket.wav
+2026-04-04 20:00:36,384 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Fog Blanket.flac
+2026-04-04 20:00:36,733 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Fog Blanket.mp3
+2026-04-04 20:00:39,906 - services.xls_service - INFO - 86 - Erreur
+2026-04-04 20:05:35,869 - __main__ - INFO - 40 - Creating Spotify Service from pasted URL
+2026-04-04 20:05:35,869 - services.spotify_service - INFO - 49 - Parsing URL to get playlist ID...
+2026-04-04 20:05:35,869 - services.spotify_service - INFO - 28 - Getting access token from Spotify...
+2026-04-04 20:05:36,601 - __main__ - INFO - 47 - Creating Audio Service
+2026-04-04 20:05:36,636 - services.audio_service - INFO - 170 - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 20:05:43,345 - __main__ - INFO - 51 - Creating XLS Service
+2026-04-04 20:05:43,345 - __main__ - INFO - 58 - Counts of Filenames and Marker are the same.
+2026-04-04 20:05:43,346 - __main__ - INFO - 59 - Generating WAV, FLAC and MP3...
+2026-04-04 20:05:43,346 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Photo capercaille.wav
+2026-04-04 20:05:43,426 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Photo capercaille.flac
+2026-04-04 20:05:44,023 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Photo capercaille.mp3
+2026-04-04 20:05:49,652 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Des petits coeurs qui battent.wav
+2026-04-04 20:05:49,736 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Des petits coeurs qui battent.flac
+2026-04-04 20:05:50,706 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Des petits coeurs qui battent.mp3
+2026-04-04 20:06:00,185 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] On est dans ce qui s'en va.wav
+2026-04-04 20:06:00,273 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] On est dans ce qui s'en va.flac
+2026-04-04 20:06:00,879 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] On est dans ce qui s'en va.mp3
+2026-04-04 20:06:06,771 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Forest Fog.wav
+2026-04-04 20:06:06,859 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Forest Fog.flac
+2026-04-04 20:06:07,179 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Forest Fog.mp3
+2026-04-04 20:06:09,998 - services.audio_service - INFO - 98 - Export : | Sheila [L'heure de la sortie] Bang Bang - Remasterise en 2006.wav
+2026-04-04 20:06:10,100 - services.audio_service - INFO - 98 - Export : | Sheila [L'heure de la sortie] Bang Bang - Remasterise en 2006.flac
+2026-04-04 20:06:10,825 - services.audio_service - INFO - 98 - Export : | Sheila [L'heure de la sortie] Bang Bang - Remasterise en 2006.mp3
+2026-04-04 20:06:17,619 - services.audio_service - INFO - 98 - Export : | Visceral Design [Courage Heart and Soul] Courage Heart and Soul.wav
+2026-04-04 20:06:17,732 - services.audio_service - INFO - 98 - Export : | Visceral Design [Courage Heart and Soul] Courage Heart and Soul.flac
+2026-04-04 20:06:18,629 - services.audio_service - INFO - 98 - Export : | Visceral Design [Courage Heart and Soul] Courage Heart and Soul.mp3
+2026-04-04 20:09:49,575 - __main__ - INFO - 40 - Creating Spotify Service from pasted URL
+2026-04-04 20:09:49,576 - services.spotify_service - INFO - 49 - Parsing URL to get playlist ID...
+2026-04-04 20:09:49,576 - services.spotify_service - INFO - 28 - Getting access token from Spotify...
+2026-04-04 20:09:50,256 - __main__ - INFO - 47 - Creating Audio Service
+2026-04-04 20:09:50,268 - services.audio_service - INFO - 170 - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 20:10:12,400 - __main__ - INFO - 51 - Creating XLS Service
+2026-04-04 20:10:12,401 - __main__ - INFO - 58 - Counts of Filenames and Marker are the same.
+2026-04-04 20:10:12,401 - __main__ - INFO - 59 - Generating WAV, FLAC and MP3...
+2026-04-04 20:10:12,402 - services.audio_service - INFO - 98 - Export : | RAYE, Hans Zimmer [Click Clack Symphony. feat. Hans Zimmer] Click Clack Symphony.wav
+2026-04-04 20:10:12,516 - services.audio_service - INFO - 98 - Export : | RAYE, Hans Zimmer [Click Clack Symphony. feat. Hans Zimmer] Click Clack Symphony.flac
+2026-04-04 20:10:13,615 - services.audio_service - INFO - 98 - Export : | RAYE, Hans Zimmer [Click Clack Symphony. feat. Hans Zimmer] Click Clack Symphony.mp3
+2026-04-04 20:10:24,295 - services.audio_service - INFO - 98 - Export : | Romy, HAAi [Love Who You Love HAAi Remix] Love Who You Love - HAAi Remix.wav
+2026-04-04 20:10:24,388 - services.audio_service - INFO - 98 - Export : | Romy, HAAi [Love Who You Love HAAi Remix] Love Who You Love - HAAi Remix.flac
+2026-04-04 20:10:25,865 - services.audio_service - INFO - 98 - Export : | Romy, HAAi [Love Who You Love HAAi Remix] Love Who You Love - HAAi Remix.mp3
+2026-04-04 20:10:40,038 - services.audio_service - INFO - 98 - Export : | Roque Banos [In The Heart Of The Sea Original Motion Picture] The White Whale Chant.wav
+2026-04-04 20:10:40,137 - services.audio_service - INFO - 98 - Export : | Roque Banos [In The Heart Of The Sea Original Motion Picture] The White Whale Chant.flac
+2026-04-04 20:10:41,149 - services.audio_service - INFO - 98 - Export : | Roque Banos [In The Heart Of The Sea Original Motion Picture] The White Whale Chant.mp3
+2026-04-04 20:10:50,943 - services.audio_service - INFO - 98 - Export : | Sevdaliza, Villano Antillano +1 [HEROINA] Ride or Die, Pt. 2.wav
+2026-04-04 20:10:51,048 - services.audio_service - INFO - 98 - Export : | Sevdaliza, Villano Antillano +1 [HEROINA] Ride or Die, Pt. 2.flac
+2026-04-04 20:10:51,648 - services.audio_service - INFO - 98 - Export : | Sevdaliza, Villano Antillano +1 [HEROINA] Ride or Die, Pt. 2.mp3
+2026-04-04 20:10:57,246 - services.audio_service - INFO - 98 - Export : | The Divine [Project Hail Mary Main Theme Epic Version] Project Hail Mary Main Theme - Epic Version.wav
+2026-04-04 20:10:57,357 - services.audio_service - INFO - 98 - Export : | The Divine [Project Hail Mary Main Theme Epic Version] Project Hail Mary Main Theme - Epic Version.flac
+2026-04-04 20:10:58,013 - services.audio_service - INFO - 98 - Export : | The Divine [Project Hail Mary Main Theme Epic Version] Project Hail Mary Main Theme - Epic Version.mp3
+2026-04-04 20:11:04,171 - services.audio_service - INFO - 98 - Export : | The Kiffness [Mango Pineapple Banana Watermelon] Mango Pineapple Banana Watermelon.wav
+2026-04-04 20:11:04,287 - services.audio_service - INFO - 98 - Export : | The Kiffness [Mango Pineapple Banana Watermelon] Mango Pineapple Banana Watermelon.flac
+2026-04-04 20:11:04,910 - services.audio_service - INFO - 98 - Export : | The Kiffness [Mango Pineapple Banana Watermelon] Mango Pineapple Banana Watermelon.mp3
+2026-04-04 20:11:10,782 - services.audio_service - INFO - 98 - Export : | Tony K, Reem [Home] Home.wav
+2026-04-04 20:11:10,901 - services.audio_service - INFO - 98 - Export : | Tony K, Reem [Home] Home.flac
+2026-04-04 20:11:11,449 - services.audio_service - INFO - 98 - Export : | Tony K, Reem [Home] Home.mp3
+2026-04-04 20:11:16,650 - services.audio_service - INFO - 98 - Export : | Uno Helmersson, Mari Samuelsen +3 [Nordic Noir] Timelapse.wav
+2026-04-04 20:11:16,781 - services.audio_service - INFO - 98 - Export : | Uno Helmersson, Mari Samuelsen +3 [Nordic Noir] Timelapse.flac
+2026-04-04 20:11:17,376 - services.audio_service - INFO - 98 - Export : | Uno Helmersson, Mari Samuelsen +3 [Nordic Noir] Timelapse.mp3
+2026-04-04 20:11:23,031 - services.audio_service - INFO - 98 - Export : | veneris [Devils Caprice] Devils Caprice.wav
+2026-04-04 20:11:23,157 - services.audio_service - INFO - 98 - Export : | veneris [Devils Caprice] Devils Caprice.flac
+2026-04-04 20:11:23,509 - services.audio_service - INFO - 98 - Export : | veneris [Devils Caprice] Devils Caprice.mp3
+2026-04-04 20:11:26,632 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Notre panthere de la foret.wav
+2026-04-04 20:11:26,763 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Notre panthere de la foret.flac
+2026-04-04 20:11:27,155 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Notre panthere de la foret.mp3
+2026-04-04 20:11:30,787 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La foret qui chante.wav
+2026-04-04 20:11:30,934 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La foret qui chante.flac
+2026-04-04 20:11:31,713 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La foret qui chante.mp3
+2026-04-04 20:11:39,187 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La nuit du cerf.wav
+2026-04-04 20:11:39,348 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La nuit du cerf.flac
+2026-04-04 20:11:40,270 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] La nuit du cerf.mp3
+2026-04-04 20:11:49,234 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les arbres ecoutent les oiseaux.wav
+2026-04-04 20:11:49,395 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les arbres ecoutent les oiseaux.flac
+2026-04-04 20:11:50,125 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les arbres ecoutent les oiseaux.mp3
+2026-04-04 20:11:57,257 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Presences invisibles.wav
+2026-04-04 20:11:57,417 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Presences invisibles.flac
+2026-04-04 20:11:57,849 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Presences invisibles.mp3
+2026-04-04 20:12:01,878 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les plongeons.wav
+2026-04-04 20:12:02,041 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les plongeons.flac
+2026-04-04 20:12:02,458 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Les plongeons.mp3
+2026-04-04 20:12:06,204 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Norvege.wav
+2026-04-04 20:12:06,404 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Norvege.flac
+2026-04-04 20:12:06,718 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Norvege.mp3
+2026-04-04 20:12:09,515 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Comme un mirage.wav
+2026-04-04 20:12:09,689 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Comme un mirage.flac
+2026-04-04 20:12:10,147 - services.audio_service - INFO - 98 - Export : | Vincent Munier [Le Chant des forets] Comme un mirage.mp3
+2026-04-04 20:12:14,413 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Lynx.wav
+2026-04-04 20:12:14,610 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Lynx.flac
+2026-04-04 20:12:15,182 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Lynx.mp3
+2026-04-04 20:12:20,553 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Deer.wav
+2026-04-04 20:12:20,741 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Deer.flac
+2026-04-04 20:12:21,346 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Deer.mp3
+2026-04-04 20:12:27,071 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Fog Blanket.wav
+2026-04-04 20:12:27,259 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Fog Blanket.flac
+2026-04-04 20:12:27,605 - services.audio_service - INFO - 98 - Export : | Warren Ellis [Le Chant des forets] Fog Blanket.mp3

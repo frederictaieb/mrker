@@ -9,7 +9,7 @@ def get_logger(name: str) -> logging.Logger:
         logger.setLevel(logging.DEBUG)
 
         formatter = logging.Formatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            "%(asctime)s - %(levelname)s - %(name)s - %(lineno)d - %(message)s"
         )
 
         # Console

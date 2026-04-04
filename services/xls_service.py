@@ -79,12 +79,9 @@ class XlsService:
     def reset(self):
         if self.is_generated():
             delete_path(self.xls_file)
-            #delete_path(self.txt_file)
-
-            logger.info("Fichiers supprimés")
+            logger.info("Deleting XLS File.")
         else: 
-            logger.info("Erreur")
-
+            logger.info("Cannot delete XLS File")
 
     def __str__(self):
         return f"{self.xls_file}"

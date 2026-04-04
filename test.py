@@ -58,7 +58,6 @@ else:
         logger.info(f"Counts of Filenames and Marker are the same.")
         logger.info(f"Generating WAV, FLAC and MP3...")
         as_service.generate_tracks(tracks_data)
-        xls_service.reset()
     else:
         xls_service.generate()
         logger.info(f"Counts of Filenames and Markers are different.")
