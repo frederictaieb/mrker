@@ -1,21 +1,23 @@
 from openpyxl import Workbook
 from pathlib import Path
-from pprint import pformat
 from utils.file import delete_path
+from utils.logger import get_logger
+import pandas as pd
+
+logger = get_logger(__name__)
 
 class XlsService:
-    def __init__(self, markers=None, filenames=None):
-        self.xls_file = "data/infos/markers.xlsx"
-        self.txt_file = "data/infos/markers.txt"
-        self.filenames = filenames
-        self.markers = markers
+    xls_file = "data/infos/markers.xlsx"
+
+    def __init__(self, markers=None, tracks_data=None):
+        self.tracks_data = tracks_data or []
+        self.markers = markers or []
 
     def same_len(self):
-        return len(self.filenames) == len(self.markers)
+        return len(self.tracks_data) == len(self.markers)
 
     def min_len(self):
-        return min(len(self.filenames), len(self.markers))
-
+        return min(len(self.tracks_data), len(self.markers))
    
     def _generate_xls(self):
         wb = Workbook()
@@ -25,32 +27,60 @@ class XlsService:
             ws.cell(row=i, column=1, value=start)
             ws.cell(row=i, column=2, value=end)
 
-        for i, filename in enumerate(self.filenames, start=1):
-            ws.cell(row=i, column=3, value=filename)
+        for i, track_data in enumerate(self.tracks_data, start=1):
+            ws.cell(row=i, column=3, value=track_data.get("id"))
+            ws.cell(row=i, column=4, value=track_data.get("artist"))
+            ws.cell(row=i, column=5, value=track_data.get("title"))
+            ws.cell(row=i, column=6, value=track_data.get("album"))
+            ws.cell(row=i, column=7, value=track_data.get("spotify_link"))
+            ws.cell(row=i, column=8, value=track_data.get("duration_ms"))
+            ws.cell(row=i, column=9, value=track_data.get("duration_s"))
+            ws.cell(row=i, column=10, value=track_data.get("duration"))
+            ws.cell(row=i, column=11, value=track_data.get("filename"))
 
         wb.save(self.xls_file)
 
-    def _generate_txt(self):
-        with open(self.txt_file, "w", encoding="utf-8") as f:
-            for i in range(self.min_len()):
-                start, end = self.markers[i] 
-                filename = self.filenames[i]
-                f.write(f"{start}\t{end}\t{filename}\n")
-
+    #def _generate_txt(self):
+    #    with open(self.txt_file, "w", encoding="utf-8") as f:
+    #        for i in range(self.min_len()):
+    #            start, end = self.markers[i] 
+    #            filename = self.filenames[i]
+    #            f.write(f"{start}\t{end}\t{filename}\n")
 
     def generate(self):
         self._generate_xls()
-        self._generate_txt()
+        #if self.same_len():
+        #    self._generate_txt()
 
-    def is_generated(self):
-        xls_file_path = Path(self.xls_file)
-        txt_file_path = Path(self.txt_file)
-        return xls_file_path.is_file() and txt_file_path.is_file()
+    @classmethod
+    def load(cls):
+        if not Path(cls.xls_file).is_file():
+            raise FileNotFoundError(f"Fichier introuvable : {cls.xls_file}")
+        df = pd.read_excel(cls.xls_file, header=None)
+        df.columns = ["start","end","id","artist","title","album","spotify_link","duration_ms","duration_s","duration","filename"]
+        df = df.dropna(how="all")
+
+        df_markers = df[["start", "end"]]
+        df_markers = df_markers.dropna(subset=["start", "end"])
+        markers = list(df_markers.itertuples(index=False, name=None))
+
+        df_tracks = df[["id","artist","title","album","spotify_link","duration_ms","duration_s","duration","filename",]]
+        df_tracks = df_tracks.dropna(subset=["id"])
+        tracks_data = df_tracks.to_dict(orient="records")
+
+        return tracks_data, markers
+
+
+
+    @classmethod
+    def is_generated(cls):
+        return Path(cls.xls_file).is_file()
 
     def reset(self):
         if self.is_generated():
             delete_path(self.xls_file)
-            delete_path(self.txt_file)
+            #delete_path(self.txt_file)
+
             logger.info("Fichiers supprimés")
         else: 
             logger.info("Erreur")

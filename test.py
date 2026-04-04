@@ -8,35 +8,57 @@ from utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-load_dotenv()
-SPOTIFY_CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID")
-SPOTIFY_CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET")
+if XlsService.is_generated():
+    logger.info("XLS File detected. Getting Data...")
+    tracks_data, markers = XlsService.load()
+    xls_service = XlsService(markers=markers, tracks_data=tracks_data)
+    as_service = AudioService.create_with_xls(markers)
 
-parser = argparse.ArgumentParser(description="Split WAV based on silence + Spotify playlist")
-parser.add_argument("playlist", help="URL ou ID de la playlist Spotify")
-args = parser.parse_args()
+    if xls_service.same_len():
+        logger.info(f"Counts of Filenames and Marker are the same.")
+        logger.info(f"Generating WAV, FLAC and MP3...")
+        as_service.generate_tracks(tracks_data)
+        xls_service.reset()
+    else:
+       logger.error("Not Same Size")
+       raise SystemExit(1)
 
-sp_service = SpotifyService.create_with_data(
-    SPOTIFY_CLIENT_ID, 
-    SPOTIFY_CLIENT_SECRET,
-    args.playlist
-)
+else: 
 
-as_service = AudioService.create_with_detection()
+    load_dotenv()
 
-xls_service = XlsService(
-    markers = as_service.get_markers(),
-    filenames = sp_service.get_filenames()
-)
+    SPOTIFY_CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID")
+    SPOTIFY_CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET")
 
-if not xls_service.same_len():
-    xls_service.generate()
-    logger.info(f"Counts of Filenames and Markers are different.")
-    logger.info(f"XLS and TXT files generated.")
-    exit
+    parser = argparse.ArgumentParser(description="Split WAV based on silence + Spotify playlist")
+    parser.add_argument("playlist", help="URL ou ID de la playlist Spotify")
+    args = parser.parse_args()
 
-logger.info(f"Counts of Filenames and Marker are the same.")
-logger.info(f"Generating WAV, FLAC and MP3...")
-as_service.generate_tracks(sp_service.get_tracks_data())
+    sp_service = SpotifyService.create_with_data(
+        SPOTIFY_CLIENT_ID, 
+        SPOTIFY_CLIENT_SECRET,
+        args.playlist
+    )
+
+    tracks_data = sp_service.get_tracks_data()
+
+    as_service = AudioService.create_with_detection()
+
+    xls_service = XlsService(
+        markers = as_service.get_markers(),
+        tracks_data = tracks_data
+    )
+
+    if xls_service.same_len():
+        logger.info(f"Counts of Filenames and Marker are the same.")
+        logger.info(f"Generating WAV, FLAC and MP3...")
+        as_service.generate_tracks(tracks_data)
+        xls_service.reset()
+    else:
+        xls_service.generate()
+        logger.info(f"Counts of Filenames and Markers are different.")
+        logger.info(f"XLS file generated.")
+
+
 
 

@@ -22,14 +22,14 @@ class AudioService:
     MP3_DIR = OUTPUT_DIR / "mp3"
 
     def __init__(self):
-        self.markers = []
+        self.markers: list[tuple[float, float]] = []
 
     def _detect_markers(
         self,
-        silence_threshold: float = 0.01,
+        silence_threshold: float = 0,
         min_silence_ms: int = 300,
         min_track_ms: int = 1000,
-    ) -> list[tuple[int, int]]:
+    ) -> list[tuple[float, float]]:
         data, sr = sf.read(self.INPUT_PATH)
 
         # passage en mono
@@ -106,7 +106,13 @@ class AudioService:
             cmd += codecs
 
         cmd.append(str(output_path))
-        subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+        try:
+            subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        except subprocess.CalledProcessError as e:
+            logger.error(f"ffmpeg failed for {output_path}: {e.stderr}")
+            raise
+
 
 
     def generate_tracks(self, tracks_data):
@@ -119,17 +125,18 @@ class AudioService:
         flac_dir = self.FLAC_DIR
         flac_dir.mkdir(parents=True, exist_ok=True)
 
-        created_files: list[str] = []
+        if len(self.markers) != len(tracks_data):
+            logger.error(self.markers)
+            logger.error(tracks_data)
+            raise ValueError(f"Mismatch: {len(self.markers)} markers but {len(tracks_data)} tracks data")
 
-        for i, ((start_sec, end_sec), track) in enumerate(
-            zip(self.markers, tracks_data),
-            start=1,
-        ):
+
+        for (start_sec, end_sec), track in zip(self.markers, tracks_data):
             filename = track["filename"]
             artist = track["artist"]
             title = track["title"]
             album = track["album"]
-            created = datetime.now().isoformat()
+            created = datetime.now().strftime("%Y%m%d_%H%M%S")
 
             wav_path = (output_dir / filename).with_suffix(".wav")
             mp3_path = (mp3_dir / filename).with_suffix(".mp3")
@@ -167,6 +174,13 @@ class AudioService:
         obj = cls()
         obj._reset()
         obj._detect_markers()
+        return obj
+
+    @classmethod
+    def create_with_xls(cls, markers):
+        obj = cls()
+        obj._reset()
+        obj.markers = markers
         return obj
 
     def get_markers(self):

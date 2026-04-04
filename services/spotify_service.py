@@ -69,17 +69,19 @@ class SpotifyService:
                 "next"
             )
         }
-
+        
         while url:
             response = requests.get(url, headers=headers, params=params, timeout=30)
             response.raise_for_status()
             data = response.json()
+            i = 0
 
             for item in data.get("items", []):
                 track = item.get("track")
                 if not track or track.get("is_local"):
                     continue
 
+                i = i + 1
                 artists = ", ".join(artist["name"] for artist in track.get("artists", []))
                 raw_title = track.get("name", "")
                 raw_album = track.get("album", {}).get("name", "")
@@ -93,6 +95,7 @@ class SpotifyService:
                 filename = build_filename(artists, album, title)
 
                 tracks_data.append({
+                    "id": i,
                     "artist": artists,
                     "title": title,
                     "album": album,

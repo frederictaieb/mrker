@@ -1440,3 +1440,452 @@
 2026-04-02 12:51:20,471 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.wav
 2026-04-02 12:51:20,590 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.flac
 2026-04-02 12:51:21,100 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.mp3
+2026-04-02 13:06:47,003 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-02 13:06:47,004 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-02 13:06:47,749 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-02 13:07:15,599 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-02 13:07:15,599 - __main__ - INFO - XLS and TXT files generated.
+2026-04-02 13:07:15,599 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-02 13:07:15,599 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-02 13:08:26,652 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-02 13:08:26,652 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-02 13:08:27,464 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-02 13:08:55,851 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-02 13:08:55,851 - __main__ - INFO - XLS and TXT files generated.
+2026-04-02 13:08:55,851 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-02 13:08:55,851 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-02 13:11:32,611 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-02 13:11:32,611 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-02 13:11:33,225 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-02 13:12:00,919 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-02 13:12:00,919 - __main__ - INFO - XLS and TXT files generated.
+2026-04-02 13:12:00,919 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-02 13:12:00,919 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-02 13:12:00,920 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.wav
+2026-04-02 13:12:01,059 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.flac
+2026-04-02 13:12:01,737 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.mp3
+2026-04-02 13:12:07,735 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav
+2026-04-02 13:12:07,792 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.flac
+2026-04-02 13:12:07,841 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.mp3
+2026-04-02 13:12:07,915 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.wav
+2026-04-02 13:12:07,969 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.flac
+2026-04-02 13:12:08,011 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.mp3
+2026-04-02 13:12:08,079 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.wav
+2026-04-02 13:12:08,137 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.flac
+2026-04-02 13:12:08,244 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.mp3
+2026-04-02 13:12:08,899 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.wav
+2026-04-02 13:12:08,969 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.flac
+2026-04-02 13:12:09,435 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.mp3
+2026-04-02 13:12:13,783 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.wav
+2026-04-02 13:12:13,871 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.flac
+2026-04-02 13:12:14,636 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.mp3
+2026-04-02 13:12:21,712 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav
+2026-04-02 13:12:21,781 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.flac
+2026-04-02 13:12:21,832 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.mp3
+2026-04-02 13:12:21,918 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav
+2026-04-02 13:12:21,989 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.flac
+2026-04-02 13:12:22,045 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.mp3
+2026-04-02 13:12:22,158 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.wav
+2026-04-02 13:12:22,230 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.flac
+2026-04-02 13:12:22,282 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.mp3
+2026-04-02 13:12:22,377 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav
+2026-04-02 13:12:22,448 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.flac
+2026-04-02 13:12:22,509 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.mp3
+2026-04-02 13:12:22,679 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.wav
+2026-04-02 13:12:22,755 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.flac
+2026-04-02 13:12:22,795 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.mp3
+2026-04-02 13:12:22,863 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav
+2026-04-02 13:12:22,934 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.flac
+2026-04-02 13:12:23,042 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.mp3
+2026-04-02 13:12:23,707 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav
+2026-04-02 13:12:23,780 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.flac
+2026-04-02 13:12:23,831 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.mp3
+2026-04-02 13:12:23,927 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.wav
+2026-04-02 13:12:24,000 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.flac
+2026-04-02 13:12:24,060 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.mp3
+2026-04-02 13:12:24,238 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav
+2026-04-02 13:12:24,311 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.flac
+2026-04-02 13:12:24,373 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.mp3
+2026-04-02 13:12:24,565 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav
+2026-04-02 13:12:24,693 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.flac
+2026-04-02 13:12:25,321 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.mp3
+2026-04-02 13:12:31,292 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav
+2026-04-02 13:12:31,378 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.flac
+2026-04-02 13:12:31,600 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.mp3
+2026-04-02 13:12:33,560 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.wav
+2026-04-02 13:12:33,644 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.flac
+2026-04-02 13:12:33,694 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.mp3
+2026-04-02 13:12:33,783 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.wav
+2026-04-02 13:12:33,880 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.flac
+2026-04-02 13:12:34,342 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.mp3
+2026-04-02 13:12:38,428 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.wav
+2026-04-02 13:12:38,528 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.flac
+2026-04-02 13:12:39,035 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.mp3
+2026-04-02 13:12:56,560 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-02 13:12:56,560 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-02 13:12:57,380 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-02 13:13:25,070 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-02 13:13:25,070 - __main__ - INFO - XLS and TXT files generated.
+2026-04-02 13:13:25,070 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-02 13:13:25,071 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-02 13:13:37,563 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-02 13:13:37,563 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-02 13:13:38,511 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-02 13:14:05,737 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-02 13:14:05,737 - __main__ - INFO - XLS and TXT files generated.
+2026-04-02 13:14:05,737 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-02 13:14:05,738 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-02 13:14:05,738 - services.audio_service - ERROR - [(0.16, 171.621), (178.673, 179.947), (181.444, 182.609), (184.061, 201.304), (201.752, 326.637), (337.028, 539.511), (539.831, 541.425), (551.972, 554.461), (554.855, 556.767), (559.102, 562.466), (563.885, 565.054), (569.018, 586.777), (588.129, 589.914), (591.836, 595.408), (596.904, 600.958), (602.717, 774.346), (779.426, 831.558), (831.862, 833.508), (841.653, 958.144), (961.395, 1097.083), (1098.835, 1113.949), (1114.374, 1179.356), (1184.506, 1403.109), (1412.367, 1475.115), (1476.037, 1481.846), (1483.778, 1563.642), (1564.059, 1576.661), (1577.943, 1671.226), (1681.819, 1895.864), (1904.031, 1930.221), (1932.681, 1934.21), (1936.395, 2027.812), (2029.455, 2030.917), (2033.157, 2092.25), (2104.175, 2105.863), (2106.399, 2111.104), (2112.912, 2267.014), (2275.298, 2276.53), (2278.475, 2280.151), (2280.843, 2282.055), (2288.998, 2293.286), (2297.348, 2303.669), (2304.841, 2312.91), (2315.798, 2344.33), (2344.915, 2434.903), (2437.197, 2497.055), (2508.032, 2650.597), (2663.059, 2671.094), (2672.614, 2682.112), (2683.782, 2691.875), (2692.272, 2703.051), (2703.476, 2723.726), (2724.101, 2746.884), (2785.737, 2787.548), (2793.091, 2831.81), (2833.796, 2835.629), (2838.367, 3176.809), (3192.641, 3244.798), (3247.124, 3267.142), (3267.665, 3394.787), (3395.952, 3464.754), (3484.199, 3487.128), (3489.536, 3492.461), (3494.203, 3497.795), (3500.869, 3501.879), (3505.203, 3586.141), (3588.172, 3617.211), (3630.326, 3632.751), (3639.95, 3644.496), (3647.946, 3713.82), (3721.59, 3726.737), (3727.141, 3728.9), (3729.248, 3949.255), (3954.635, 3955.893), (3956.625, 3957.796), (3958.171, 3960.28), (3962.204, 3963.802), (3964.473, 3965.722), (3966.461, 3968.125), (3970.749, 3972.12), (3974.153, 3976.945), (3978.342, 3985.735), (3986.054, 4070.58), (4071.113, 4073.478), (4075.15, 4078.735), (4079.204, 4181.009)]
+2026-04-02 13:14:05,738 - services.audio_service - ERROR - [{'artist': 'Ajeet', 'title': 'Soften', 'album': 'Soften', 'spotify_link': 'https://open.spotify.com/track/0FeIoHCbYT0Kwkyr4JLHdR', 'duration_ms': 177537, 'duration_s': 177.537, 'duration': '2:57', 'filename': 'Ajeet [Soften] Soften.wav'}, {'artist': 'Alban Claudin, Jérôme Rebotier', 'title': 'Mercédès - Piano Version', 'album': 'Le Comte de Monte Cristo (Piano Version)', 'spotify_link': 'https://open.spotify.com/track/1vRrwx5xrDSMp9i0l9GMHP', 'duration_ms': 158440, 'duration_s': 158.44, 'duration': '2:38', 'filename': 'Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav'}, {'artist': 'Alewya, eejebee, Vraell', 'title': 'City of Symbols', 'album': 'City of Symbols', 'spotify_link': 'https://open.spotify.com/track/1JAXKQ9M0xWhwk7l1y7MHQ', 'duration_ms': 209438, 'duration_s': 209.438, 'duration': '3:29', 'filename': 'Alewya, eejebee +1 [City of Symbols] City of Symbols.wav'}, {'artist': 'Alice Baldwin', 'title': 'Was am Ende', 'album': 'Was am Ende', 'spotify_link': 'https://open.spotify.com/track/27Af1ceJMtusIKFbvU7uux', 'duration_ms': 292572, 'duration_s': 292.572, 'duration': '4:52', 'filename': 'Alice Baldwin [Was am Ende] Was am Ende.wav'}, {'artist': 'Arya', 'title': 'the mind settles', 'album': 'the mind settles', 'spotify_link': 'https://open.spotify.com/track/22AlUIiOcagoDzTsbXqFks', 'duration_ms': 120474, 'duration_s': 120.474, 'duration': '2:00', 'filename': 'Arya [the mind settles] the mind settles.wav'}, {'artist': 'Austin Farwell', 'title': 'Venus and Flower', 'album': 'Venus and Flower', 'spotify_link': 'https://open.spotify.com/track/6QrkTCHubOKfyBek1P0mMx', 'duration_ms': 221487, 'duration_s': 221.487, 'duration': '3:41', 'filename': 'Austin Farwell [Venus and Flower] Venus and Flower.wav'}, {'artist': 'Birds on a Wire, Dom La Nena, Rosemary Standley', 'title': 'Lux Permanet', 'album': 'Le Chant des forêts', 'spotify_link': 'https://open.spotify.com/track/6koooSHzpZIqRxYUqevRbK', 'duration_ms': 228546, 'duration_s': 228.546, 'duration': '3:48', 'filename': 'Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav'}, {'artist': 'Birds on a Wire, Dom La Nena, Rosemary Standley', 'title': 'Who Knows Where the Times Goes?', 'album': 'Le Chant des forêts', 'spotify_link': 'https://open.spotify.com/track/75zwtfElkF9Q4x6XxL1sni', 'duration_ms': 269149, 'duration_s': 269.149, 'duration': '4:29', 'filename': 'Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav'}, {'artist': 'Bleu nuage', 'title': 'Goodbye', 'album': 'Goodbye', 'spotify_link': 'https://open.spotify.com/track/55Vqw1djCKKs4UhfCohrgk', 'duration_ms': 221250, 'duration_s': 221.25, 'duration': '3:41', 'filename': 'Bleu nuage [Goodbye] Goodbye.wav'}, {'artist': 'Bleu nuage', 'title': "J'attends que la nuit", 'album': "J'attends que la nuit", 'spotify_link': 'https://open.spotify.com/track/5BNSKMQeldT2crarXj22Oi', 'duration_ms': 191496, 'duration_s': 191.496, 'duration': '3:11', 'filename': "Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav"}, {'artist': 'Christopher Willis', 'title': "David's Writings", 'album': 'The Personal History of David Copperfield (Original Motion Picture Soundtrack)', 'spotify_link': 'https://open.spotify.com/track/4Q0VPrw0jgRB7onKAtRnFG', 'duration_ms': 177773, 'duration_s': 177.773, 'duration': '2:57', 'filename': "Christopher Willis [The Personal History of David Copperfield] David's Writings.wav"}, {'artist': 'Daniel Pemberton', 'title': 'You Were Loved (Burial)', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/2osj7VDcwgOx2jJnmfybSj', 'duration_ms': 233173, 'duration_s': 233.173, 'duration': '3:53', 'filename': 'Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav'}, {'artist': 'Daniel Pemberton', 'title': 'Rocky Sacrifice', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/0IwWN0uBSIrW6WK06RLD4E', 'duration_ms': 153480, 'duration_s': 153.48, 'duration': '2:33', 'filename': 'Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav'}, {'artist': 'Daniel Pemberton', 'title': 'Humanity', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/3IrbUItr7Mr46vwvDSO2xB', 'duration_ms': 92706, 'duration_s': 92.706, 'duration': '1:32', 'filename': 'Daniel Pemberton [Project Hail Mary] Humanity.wav'}, {'artist': 'Daniel Pemberton', 'title': 'Time Go Fishing', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/6odjHeBKXP6fvV9v0QRUOw', 'duration_ms': 429973, 'duration_s': 429.973, 'duration': '7:09', 'filename': 'Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav'}, {'artist': 'Daniel Pemberton', 'title': 'Ryland Grace, Cognition Assessment', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/5jIgkhFUl6c6htlj1iCGcj', 'duration_ms': 287293, 'duration_s': 287.293, 'duration': '4:47', 'filename': 'Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav'}, {'artist': 'Daniel Pemberton', 'title': 'Top Secret Clearance', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/1NgAFF75a8kkHLXqpW8FLr', 'duration_ms': 155346, 'duration_s': 155.346, 'duration': '2:35', 'filename': 'Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav'}, {'artist': 'Daniel Pemberton', 'title': 'God Willing', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/4baBHSngjlLlWYkS1S27eS', 'duration_ms': 92080, 'duration_s': 92.08, 'duration': '1:32', 'filename': 'Daniel Pemberton [Project Hail Mary] God Willing.wav'}, {'artist': 'DJ Henrix', 'title': 'Noche De Amor', 'album': 'Noche De Amor', 'spotify_link': 'https://open.spotify.com/track/6NWbAg55cLW2NoZ891XWSY', 'duration_ms': 230492, 'duration_s': 230.492, 'duration': '3:50', 'filename': 'DJ Henrix [Noche De Amor] Noche De Amor.wav'}, {'artist': 'Douran', 'title': 'Oraj', 'album': 'Oraj', 'spotify_link': 'https://open.spotify.com/track/1yAb1CahEdSYByTum9lFUL', 'duration_ms': 233966, 'duration_s': 233.966, 'duration': '3:53', 'filename': 'Douran [Oraj] Oraj.wav'}]
+2026-04-02 13:16:13,763 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-02 13:16:13,763 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-02 13:16:14,502 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-02 13:16:42,309 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-02 13:16:42,309 - __main__ - INFO - XLS and TXT files generated.
+2026-04-02 13:16:42,309 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-02 13:16:42,309 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-02 13:16:42,309 - services.audio_service - ERROR - [(0.16, 171.621), (178.673, 179.947), (181.444, 182.609), (184.061, 201.304), (201.752, 326.637), (337.028, 539.511), (539.831, 541.425), (551.972, 554.461), (554.855, 556.767), (559.102, 562.466), (563.885, 565.054), (569.018, 586.777), (588.129, 589.914), (591.836, 595.408), (596.904, 600.958), (602.717, 774.346), (779.426, 831.558), (831.862, 833.508), (841.653, 958.144), (961.395, 1097.083), (1098.835, 1113.949), (1114.374, 1179.356), (1184.506, 1403.109), (1412.367, 1475.115), (1476.037, 1481.846), (1483.778, 1563.642), (1564.059, 1576.661), (1577.943, 1671.226), (1681.819, 1895.864), (1904.031, 1930.221), (1932.681, 1934.21), (1936.395, 2027.812), (2029.455, 2030.917), (2033.157, 2092.25), (2104.175, 2105.863), (2106.399, 2111.104), (2112.912, 2267.014), (2275.298, 2276.53), (2278.475, 2280.151), (2280.843, 2282.055), (2288.998, 2293.286), (2297.348, 2303.669), (2304.841, 2312.91), (2315.798, 2344.33), (2344.915, 2434.903), (2437.197, 2497.055), (2508.032, 2650.597), (2663.059, 2671.094), (2672.614, 2682.112), (2683.782, 2691.875), (2692.272, 2703.051), (2703.476, 2723.726), (2724.101, 2746.884), (2785.737, 2787.548), (2793.091, 2831.81), (2833.796, 2835.629), (2838.367, 3176.809), (3192.641, 3244.798), (3247.124, 3267.142), (3267.665, 3394.787), (3395.952, 3464.754), (3484.199, 3487.128), (3489.536, 3492.461), (3494.203, 3497.795), (3500.869, 3501.879), (3505.203, 3586.141), (3588.172, 3617.211), (3630.326, 3632.751), (3639.95, 3644.496), (3647.946, 3713.82), (3721.59, 3726.737), (3727.141, 3728.9), (3729.248, 3949.255), (3954.635, 3955.893), (3956.625, 3957.796), (3958.171, 3960.28), (3962.204, 3963.802), (3964.473, 3965.722), (3966.461, 3968.125), (3970.749, 3972.12), (3974.153, 3976.945), (3978.342, 3985.735), (3986.054, 4070.58), (4071.113, 4073.478), (4075.15, 4078.735), (4079.204, 4181.009)]
+2026-04-02 13:16:42,309 - services.audio_service - ERROR - [{'id': 1, 'artist': 'Ajeet', 'title': 'Soften', 'album': 'Soften', 'spotify_link': 'https://open.spotify.com/track/0FeIoHCbYT0Kwkyr4JLHdR', 'duration_ms': 177537, 'duration_s': 177.537, 'duration': '2:57', 'filename': 'Ajeet [Soften] Soften.wav'}, {'id': 1, 'artist': 'Alban Claudin, Jérôme Rebotier', 'title': 'Mercédès - Piano Version', 'album': 'Le Comte de Monte Cristo (Piano Version)', 'spotify_link': 'https://open.spotify.com/track/1vRrwx5xrDSMp9i0l9GMHP', 'duration_ms': 158440, 'duration_s': 158.44, 'duration': '2:38', 'filename': 'Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav'}, {'id': 1, 'artist': 'Alewya, eejebee, Vraell', 'title': 'City of Symbols', 'album': 'City of Symbols', 'spotify_link': 'https://open.spotify.com/track/1JAXKQ9M0xWhwk7l1y7MHQ', 'duration_ms': 209438, 'duration_s': 209.438, 'duration': '3:29', 'filename': 'Alewya, eejebee +1 [City of Symbols] City of Symbols.wav'}, {'id': 1, 'artist': 'Alice Baldwin', 'title': 'Was am Ende', 'album': 'Was am Ende', 'spotify_link': 'https://open.spotify.com/track/27Af1ceJMtusIKFbvU7uux', 'duration_ms': 292572, 'duration_s': 292.572, 'duration': '4:52', 'filename': 'Alice Baldwin [Was am Ende] Was am Ende.wav'}, {'id': 1, 'artist': 'Arya', 'title': 'the mind settles', 'album': 'the mind settles', 'spotify_link': 'https://open.spotify.com/track/22AlUIiOcagoDzTsbXqFks', 'duration_ms': 120474, 'duration_s': 120.474, 'duration': '2:00', 'filename': 'Arya [the mind settles] the mind settles.wav'}, {'id': 1, 'artist': 'Austin Farwell', 'title': 'Venus and Flower', 'album': 'Venus and Flower', 'spotify_link': 'https://open.spotify.com/track/6QrkTCHubOKfyBek1P0mMx', 'duration_ms': 221487, 'duration_s': 221.487, 'duration': '3:41', 'filename': 'Austin Farwell [Venus and Flower] Venus and Flower.wav'}, {'id': 1, 'artist': 'Birds on a Wire, Dom La Nena, Rosemary Standley', 'title': 'Lux Permanet', 'album': 'Le Chant des forêts', 'spotify_link': 'https://open.spotify.com/track/6koooSHzpZIqRxYUqevRbK', 'duration_ms': 228546, 'duration_s': 228.546, 'duration': '3:48', 'filename': 'Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav'}, {'id': 1, 'artist': 'Birds on a Wire, Dom La Nena, Rosemary Standley', 'title': 'Who Knows Where the Times Goes?', 'album': 'Le Chant des forêts', 'spotify_link': 'https://open.spotify.com/track/75zwtfElkF9Q4x6XxL1sni', 'duration_ms': 269149, 'duration_s': 269.149, 'duration': '4:29', 'filename': 'Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav'}, {'id': 1, 'artist': 'Bleu nuage', 'title': 'Goodbye', 'album': 'Goodbye', 'spotify_link': 'https://open.spotify.com/track/55Vqw1djCKKs4UhfCohrgk', 'duration_ms': 221250, 'duration_s': 221.25, 'duration': '3:41', 'filename': 'Bleu nuage [Goodbye] Goodbye.wav'}, {'id': 1, 'artist': 'Bleu nuage', 'title': "J'attends que la nuit", 'album': "J'attends que la nuit", 'spotify_link': 'https://open.spotify.com/track/5BNSKMQeldT2crarXj22Oi', 'duration_ms': 191496, 'duration_s': 191.496, 'duration': '3:11', 'filename': "Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav"}, {'id': 1, 'artist': 'Christopher Willis', 'title': "David's Writings", 'album': 'The Personal History of David Copperfield (Original Motion Picture Soundtrack)', 'spotify_link': 'https://open.spotify.com/track/4Q0VPrw0jgRB7onKAtRnFG', 'duration_ms': 177773, 'duration_s': 177.773, 'duration': '2:57', 'filename': "Christopher Willis [The Personal History of David Copperfield] David's Writings.wav"}, {'id': 1, 'artist': 'Daniel Pemberton', 'title': 'You Were Loved (Burial)', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/2osj7VDcwgOx2jJnmfybSj', 'duration_ms': 233173, 'duration_s': 233.173, 'duration': '3:53', 'filename': 'Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav'}, {'id': 1, 'artist': 'Daniel Pemberton', 'title': 'Rocky Sacrifice', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/0IwWN0uBSIrW6WK06RLD4E', 'duration_ms': 153480, 'duration_s': 153.48, 'duration': '2:33', 'filename': 'Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav'}, {'id': 1, 'artist': 'Daniel Pemberton', 'title': 'Humanity', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/3IrbUItr7Mr46vwvDSO2xB', 'duration_ms': 92706, 'duration_s': 92.706, 'duration': '1:32', 'filename': 'Daniel Pemberton [Project Hail Mary] Humanity.wav'}, {'id': 1, 'artist': 'Daniel Pemberton', 'title': 'Time Go Fishing', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/6odjHeBKXP6fvV9v0QRUOw', 'duration_ms': 429973, 'duration_s': 429.973, 'duration': '7:09', 'filename': 'Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav'}, {'id': 1, 'artist': 'Daniel Pemberton', 'title': 'Ryland Grace, Cognition Assessment', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/5jIgkhFUl6c6htlj1iCGcj', 'duration_ms': 287293, 'duration_s': 287.293, 'duration': '4:47', 'filename': 'Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav'}, {'id': 1, 'artist': 'Daniel Pemberton', 'title': 'Top Secret Clearance', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/1NgAFF75a8kkHLXqpW8FLr', 'duration_ms': 155346, 'duration_s': 155.346, 'duration': '2:35', 'filename': 'Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav'}, {'id': 1, 'artist': 'Daniel Pemberton', 'title': 'God Willing', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/4baBHSngjlLlWYkS1S27eS', 'duration_ms': 92080, 'duration_s': 92.08, 'duration': '1:32', 'filename': 'Daniel Pemberton [Project Hail Mary] God Willing.wav'}, {'id': 1, 'artist': 'DJ Henrix', 'title': 'Noche De Amor', 'album': 'Noche De Amor', 'spotify_link': 'https://open.spotify.com/track/6NWbAg55cLW2NoZ891XWSY', 'duration_ms': 230492, 'duration_s': 230.492, 'duration': '3:50', 'filename': 'DJ Henrix [Noche De Amor] Noche De Amor.wav'}, {'id': 1, 'artist': 'Douran', 'title': 'Oraj', 'album': 'Oraj', 'spotify_link': 'https://open.spotify.com/track/1yAb1CahEdSYByTum9lFUL', 'duration_ms': 233966, 'duration_s': 233.966, 'duration': '3:53', 'filename': 'Douran [Oraj] Oraj.wav'}]
+2026-04-02 13:17:38,678 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-02 13:17:38,678 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-02 13:17:39,542 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-02 13:18:07,114 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-02 13:18:07,114 - __main__ - INFO - XLS and TXT files generated.
+2026-04-02 13:18:07,114 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-02 13:18:07,114 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-02 13:18:07,114 - services.audio_service - ERROR - [(0.16, 171.621), (178.673, 179.947), (181.444, 182.609), (184.061, 201.304), (201.752, 326.637), (337.028, 539.511), (539.831, 541.425), (551.972, 554.461), (554.855, 556.767), (559.102, 562.466), (563.885, 565.054), (569.018, 586.777), (588.129, 589.914), (591.836, 595.408), (596.904, 600.958), (602.717, 774.346), (779.426, 831.558), (831.862, 833.508), (841.653, 958.144), (961.395, 1097.083), (1098.835, 1113.949), (1114.374, 1179.356), (1184.506, 1403.109), (1412.367, 1475.115), (1476.037, 1481.846), (1483.778, 1563.642), (1564.059, 1576.661), (1577.943, 1671.226), (1681.819, 1895.864), (1904.031, 1930.221), (1932.681, 1934.21), (1936.395, 2027.812), (2029.455, 2030.917), (2033.157, 2092.25), (2104.175, 2105.863), (2106.399, 2111.104), (2112.912, 2267.014), (2275.298, 2276.53), (2278.475, 2280.151), (2280.843, 2282.055), (2288.998, 2293.286), (2297.348, 2303.669), (2304.841, 2312.91), (2315.798, 2344.33), (2344.915, 2434.903), (2437.197, 2497.055), (2508.032, 2650.597), (2663.059, 2671.094), (2672.614, 2682.112), (2683.782, 2691.875), (2692.272, 2703.051), (2703.476, 2723.726), (2724.101, 2746.884), (2785.737, 2787.548), (2793.091, 2831.81), (2833.796, 2835.629), (2838.367, 3176.809), (3192.641, 3244.798), (3247.124, 3267.142), (3267.665, 3394.787), (3395.952, 3464.754), (3484.199, 3487.128), (3489.536, 3492.461), (3494.203, 3497.795), (3500.869, 3501.879), (3505.203, 3586.141), (3588.172, 3617.211), (3630.326, 3632.751), (3639.95, 3644.496), (3647.946, 3713.82), (3721.59, 3726.737), (3727.141, 3728.9), (3729.248, 3949.255), (3954.635, 3955.893), (3956.625, 3957.796), (3958.171, 3960.28), (3962.204, 3963.802), (3964.473, 3965.722), (3966.461, 3968.125), (3970.749, 3972.12), (3974.153, 3976.945), (3978.342, 3985.735), (3986.054, 4070.58), (4071.113, 4073.478), (4075.15, 4078.735), (4079.204, 4181.009)]
+2026-04-02 13:18:07,115 - services.audio_service - ERROR - [{'id': 1, 'artist': 'Ajeet', 'title': 'Soften', 'album': 'Soften', 'spotify_link': 'https://open.spotify.com/track/0FeIoHCbYT0Kwkyr4JLHdR', 'duration_ms': 177537, 'duration_s': 177.537, 'duration': '2:57', 'filename': 'Ajeet [Soften] Soften.wav'}, {'id': 2, 'artist': 'Alban Claudin, Jérôme Rebotier', 'title': 'Mercédès - Piano Version', 'album': 'Le Comte de Monte Cristo (Piano Version)', 'spotify_link': 'https://open.spotify.com/track/1vRrwx5xrDSMp9i0l9GMHP', 'duration_ms': 158440, 'duration_s': 158.44, 'duration': '2:38', 'filename': 'Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav'}, {'id': 3, 'artist': 'Alewya, eejebee, Vraell', 'title': 'City of Symbols', 'album': 'City of Symbols', 'spotify_link': 'https://open.spotify.com/track/1JAXKQ9M0xWhwk7l1y7MHQ', 'duration_ms': 209438, 'duration_s': 209.438, 'duration': '3:29', 'filename': 'Alewya, eejebee +1 [City of Symbols] City of Symbols.wav'}, {'id': 4, 'artist': 'Alice Baldwin', 'title': 'Was am Ende', 'album': 'Was am Ende', 'spotify_link': 'https://open.spotify.com/track/27Af1ceJMtusIKFbvU7uux', 'duration_ms': 292572, 'duration_s': 292.572, 'duration': '4:52', 'filename': 'Alice Baldwin [Was am Ende] Was am Ende.wav'}, {'id': 5, 'artist': 'Arya', 'title': 'the mind settles', 'album': 'the mind settles', 'spotify_link': 'https://open.spotify.com/track/22AlUIiOcagoDzTsbXqFks', 'duration_ms': 120474, 'duration_s': 120.474, 'duration': '2:00', 'filename': 'Arya [the mind settles] the mind settles.wav'}, {'id': 6, 'artist': 'Austin Farwell', 'title': 'Venus and Flower', 'album': 'Venus and Flower', 'spotify_link': 'https://open.spotify.com/track/6QrkTCHubOKfyBek1P0mMx', 'duration_ms': 221487, 'duration_s': 221.487, 'duration': '3:41', 'filename': 'Austin Farwell [Venus and Flower] Venus and Flower.wav'}, {'id': 7, 'artist': 'Birds on a Wire, Dom La Nena, Rosemary Standley', 'title': 'Lux Permanet', 'album': 'Le Chant des forêts', 'spotify_link': 'https://open.spotify.com/track/6koooSHzpZIqRxYUqevRbK', 'duration_ms': 228546, 'duration_s': 228.546, 'duration': '3:48', 'filename': 'Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav'}, {'id': 8, 'artist': 'Birds on a Wire, Dom La Nena, Rosemary Standley', 'title': 'Who Knows Where the Times Goes?', 'album': 'Le Chant des forêts', 'spotify_link': 'https://open.spotify.com/track/75zwtfElkF9Q4x6XxL1sni', 'duration_ms': 269149, 'duration_s': 269.149, 'duration': '4:29', 'filename': 'Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav'}, {'id': 9, 'artist': 'Bleu nuage', 'title': 'Goodbye', 'album': 'Goodbye', 'spotify_link': 'https://open.spotify.com/track/55Vqw1djCKKs4UhfCohrgk', 'duration_ms': 221250, 'duration_s': 221.25, 'duration': '3:41', 'filename': 'Bleu nuage [Goodbye] Goodbye.wav'}, {'id': 10, 'artist': 'Bleu nuage', 'title': "J'attends que la nuit", 'album': "J'attends que la nuit", 'spotify_link': 'https://open.spotify.com/track/5BNSKMQeldT2crarXj22Oi', 'duration_ms': 191496, 'duration_s': 191.496, 'duration': '3:11', 'filename': "Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav"}, {'id': 11, 'artist': 'Christopher Willis', 'title': "David's Writings", 'album': 'The Personal History of David Copperfield (Original Motion Picture Soundtrack)', 'spotify_link': 'https://open.spotify.com/track/4Q0VPrw0jgRB7onKAtRnFG', 'duration_ms': 177773, 'duration_s': 177.773, 'duration': '2:57', 'filename': "Christopher Willis [The Personal History of David Copperfield] David's Writings.wav"}, {'id': 12, 'artist': 'Daniel Pemberton', 'title': 'You Were Loved (Burial)', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/2osj7VDcwgOx2jJnmfybSj', 'duration_ms': 233173, 'duration_s': 233.173, 'duration': '3:53', 'filename': 'Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav'}, {'id': 13, 'artist': 'Daniel Pemberton', 'title': 'Rocky Sacrifice', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/0IwWN0uBSIrW6WK06RLD4E', 'duration_ms': 153480, 'duration_s': 153.48, 'duration': '2:33', 'filename': 'Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav'}, {'id': 14, 'artist': 'Daniel Pemberton', 'title': 'Humanity', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/3IrbUItr7Mr46vwvDSO2xB', 'duration_ms': 92706, 'duration_s': 92.706, 'duration': '1:32', 'filename': 'Daniel Pemberton [Project Hail Mary] Humanity.wav'}, {'id': 15, 'artist': 'Daniel Pemberton', 'title': 'Time Go Fishing', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/6odjHeBKXP6fvV9v0QRUOw', 'duration_ms': 429973, 'duration_s': 429.973, 'duration': '7:09', 'filename': 'Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav'}, {'id': 16, 'artist': 'Daniel Pemberton', 'title': 'Ryland Grace, Cognition Assessment', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/5jIgkhFUl6c6htlj1iCGcj', 'duration_ms': 287293, 'duration_s': 287.293, 'duration': '4:47', 'filename': 'Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav'}, {'id': 17, 'artist': 'Daniel Pemberton', 'title': 'Top Secret Clearance', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/1NgAFF75a8kkHLXqpW8FLr', 'duration_ms': 155346, 'duration_s': 155.346, 'duration': '2:35', 'filename': 'Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav'}, {'id': 18, 'artist': 'Daniel Pemberton', 'title': 'God Willing', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/4baBHSngjlLlWYkS1S27eS', 'duration_ms': 92080, 'duration_s': 92.08, 'duration': '1:32', 'filename': 'Daniel Pemberton [Project Hail Mary] God Willing.wav'}, {'id': 19, 'artist': 'DJ Henrix', 'title': 'Noche De Amor', 'album': 'Noche De Amor', 'spotify_link': 'https://open.spotify.com/track/6NWbAg55cLW2NoZ891XWSY', 'duration_ms': 230492, 'duration_s': 230.492, 'duration': '3:50', 'filename': 'DJ Henrix [Noche De Amor] Noche De Amor.wav'}, {'id': 20, 'artist': 'Douran', 'title': 'Oraj', 'album': 'Oraj', 'spotify_link': 'https://open.spotify.com/track/1yAb1CahEdSYByTum9lFUL', 'duration_ms': 233966, 'duration_s': 233.966, 'duration': '3:53', 'filename': 'Douran [Oraj] Oraj.wav'}]
+2026-04-04 15:02:10,896 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:02:10,896 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:03:46,854 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:03:46,854 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:11:29,029 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:11:29,030 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:11:29,694 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:11:59,197 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-04 15:11:59,198 - __main__ - INFO - XLS and TXT files generated.
+2026-04-04 15:11:59,198 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-04 15:11:59,198 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-04 15:11:59,198 - services.audio_service - ERROR - [(0.16, 171.621), (178.673, 179.947), (181.444, 182.609), (184.061, 201.304), (201.752, 326.637), (337.028, 539.511), (539.831, 541.425), (551.972, 554.461), (554.855, 556.767), (559.102, 562.466), (563.885, 565.054), (569.018, 586.777), (588.129, 589.914), (591.836, 595.408), (596.904, 600.958), (602.717, 774.346), (779.426, 831.558), (831.862, 833.508), (841.653, 958.144), (961.395, 1097.083), (1098.835, 1113.949), (1114.374, 1179.356), (1184.506, 1403.109), (1412.367, 1475.115), (1476.037, 1481.846), (1483.778, 1563.642), (1564.059, 1576.661), (1577.943, 1671.226), (1681.819, 1895.864), (1904.031, 1930.221), (1932.681, 1934.21), (1936.395, 2027.812), (2029.455, 2030.917), (2033.157, 2092.25), (2104.175, 2105.863), (2106.399, 2111.104), (2112.912, 2267.014), (2275.298, 2276.53), (2278.475, 2280.151), (2280.843, 2282.055), (2288.998, 2293.286), (2297.348, 2303.669), (2304.841, 2312.91), (2315.798, 2344.33), (2344.915, 2434.903), (2437.197, 2497.055), (2508.032, 2650.597), (2663.059, 2671.094), (2672.614, 2682.112), (2683.782, 2691.875), (2692.272, 2703.051), (2703.476, 2723.726), (2724.101, 2746.884), (2785.737, 2787.548), (2793.091, 2831.81), (2833.796, 2835.629), (2838.367, 3176.809), (3192.641, 3244.798), (3247.124, 3267.142), (3267.665, 3394.787), (3395.952, 3464.754), (3484.199, 3487.128), (3489.536, 3492.461), (3494.203, 3497.795), (3500.869, 3501.879), (3505.203, 3586.141), (3588.172, 3617.211), (3630.326, 3632.751), (3639.95, 3644.496), (3647.946, 3713.82), (3721.59, 3726.737), (3727.141, 3728.9), (3729.248, 3949.255), (3954.635, 3955.893), (3956.625, 3957.796), (3958.171, 3960.28), (3962.204, 3963.802), (3964.473, 3965.722), (3966.461, 3968.125), (3970.749, 3972.12), (3974.153, 3976.945), (3978.342, 3985.735), (3986.054, 4070.58), (4071.113, 4073.478), (4075.15, 4078.735), (4079.204, 4181.009)]
+2026-04-04 15:11:59,199 - services.audio_service - ERROR - [{'id': 1, 'artist': 'Ajeet', 'title': 'Soften', 'album': 'Soften', 'spotify_link': 'https://open.spotify.com/track/0FeIoHCbYT0Kwkyr4JLHdR', 'duration_ms': 177537, 'duration_s': 177.537, 'duration': '2:57', 'filename': 'Ajeet [Soften] Soften.wav'}, {'id': 2, 'artist': 'Alban Claudin, Jérôme Rebotier', 'title': 'Mercédès - Piano Version', 'album': 'Le Comte de Monte Cristo (Piano Version)', 'spotify_link': 'https://open.spotify.com/track/1vRrwx5xrDSMp9i0l9GMHP', 'duration_ms': 158440, 'duration_s': 158.44, 'duration': '2:38', 'filename': 'Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav'}, {'id': 3, 'artist': 'Alewya, eejebee, Vraell', 'title': 'City of Symbols', 'album': 'City of Symbols', 'spotify_link': 'https://open.spotify.com/track/1JAXKQ9M0xWhwk7l1y7MHQ', 'duration_ms': 209438, 'duration_s': 209.438, 'duration': '3:29', 'filename': 'Alewya, eejebee +1 [City of Symbols] City of Symbols.wav'}, {'id': 4, 'artist': 'Alice Baldwin', 'title': 'Was am Ende', 'album': 'Was am Ende', 'spotify_link': 'https://open.spotify.com/track/27Af1ceJMtusIKFbvU7uux', 'duration_ms': 292572, 'duration_s': 292.572, 'duration': '4:52', 'filename': 'Alice Baldwin [Was am Ende] Was am Ende.wav'}, {'id': 5, 'artist': 'Arya', 'title': 'the mind settles', 'album': 'the mind settles', 'spotify_link': 'https://open.spotify.com/track/22AlUIiOcagoDzTsbXqFks', 'duration_ms': 120474, 'duration_s': 120.474, 'duration': '2:00', 'filename': 'Arya [the mind settles] the mind settles.wav'}, {'id': 6, 'artist': 'Austin Farwell', 'title': 'Venus and Flower', 'album': 'Venus and Flower', 'spotify_link': 'https://open.spotify.com/track/6QrkTCHubOKfyBek1P0mMx', 'duration_ms': 221487, 'duration_s': 221.487, 'duration': '3:41', 'filename': 'Austin Farwell [Venus and Flower] Venus and Flower.wav'}, {'id': 7, 'artist': 'Birds on a Wire, Dom La Nena, Rosemary Standley', 'title': 'Lux Permanet', 'album': 'Le Chant des forêts', 'spotify_link': 'https://open.spotify.com/track/6koooSHzpZIqRxYUqevRbK', 'duration_ms': 228546, 'duration_s': 228.546, 'duration': '3:48', 'filename': 'Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav'}, {'id': 8, 'artist': 'Birds on a Wire, Dom La Nena, Rosemary Standley', 'title': 'Who Knows Where the Times Goes?', 'album': 'Le Chant des forêts', 'spotify_link': 'https://open.spotify.com/track/75zwtfElkF9Q4x6XxL1sni', 'duration_ms': 269149, 'duration_s': 269.149, 'duration': '4:29', 'filename': 'Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav'}, {'id': 9, 'artist': 'Bleu nuage', 'title': 'Goodbye', 'album': 'Goodbye', 'spotify_link': 'https://open.spotify.com/track/55Vqw1djCKKs4UhfCohrgk', 'duration_ms': 221250, 'duration_s': 221.25, 'duration': '3:41', 'filename': 'Bleu nuage [Goodbye] Goodbye.wav'}, {'id': 10, 'artist': 'Bleu nuage', 'title': "J'attends que la nuit", 'album': "J'attends que la nuit", 'spotify_link': 'https://open.spotify.com/track/5BNSKMQeldT2crarXj22Oi', 'duration_ms': 191496, 'duration_s': 191.496, 'duration': '3:11', 'filename': "Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav"}, {'id': 11, 'artist': 'Christopher Willis', 'title': "David's Writings", 'album': 'The Personal History of David Copperfield (Original Motion Picture Soundtrack)', 'spotify_link': 'https://open.spotify.com/track/4Q0VPrw0jgRB7onKAtRnFG', 'duration_ms': 177773, 'duration_s': 177.773, 'duration': '2:57', 'filename': "Christopher Willis [The Personal History of David Copperfield] David's Writings.wav"}, {'id': 12, 'artist': 'Daniel Pemberton', 'title': 'You Were Loved (Burial)', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/2osj7VDcwgOx2jJnmfybSj', 'duration_ms': 233173, 'duration_s': 233.173, 'duration': '3:53', 'filename': 'Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav'}, {'id': 13, 'artist': 'Daniel Pemberton', 'title': 'Rocky Sacrifice', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/0IwWN0uBSIrW6WK06RLD4E', 'duration_ms': 153480, 'duration_s': 153.48, 'duration': '2:33', 'filename': 'Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav'}, {'id': 14, 'artist': 'Daniel Pemberton', 'title': 'Humanity', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/3IrbUItr7Mr46vwvDSO2xB', 'duration_ms': 92706, 'duration_s': 92.706, 'duration': '1:32', 'filename': 'Daniel Pemberton [Project Hail Mary] Humanity.wav'}, {'id': 15, 'artist': 'Daniel Pemberton', 'title': 'Time Go Fishing', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/6odjHeBKXP6fvV9v0QRUOw', 'duration_ms': 429973, 'duration_s': 429.973, 'duration': '7:09', 'filename': 'Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav'}, {'id': 16, 'artist': 'Daniel Pemberton', 'title': 'Ryland Grace, Cognition Assessment', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/5jIgkhFUl6c6htlj1iCGcj', 'duration_ms': 287293, 'duration_s': 287.293, 'duration': '4:47', 'filename': 'Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav'}, {'id': 17, 'artist': 'Daniel Pemberton', 'title': 'Top Secret Clearance', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/1NgAFF75a8kkHLXqpW8FLr', 'duration_ms': 155346, 'duration_s': 155.346, 'duration': '2:35', 'filename': 'Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav'}, {'id': 18, 'artist': 'Daniel Pemberton', 'title': 'God Willing', 'album': 'Project Hail Mary', 'spotify_link': 'https://open.spotify.com/track/4baBHSngjlLlWYkS1S27eS', 'duration_ms': 92080, 'duration_s': 92.08, 'duration': '1:32', 'filename': 'Daniel Pemberton [Project Hail Mary] God Willing.wav'}, {'id': 19, 'artist': 'DJ Henrix', 'title': 'Noche De Amor', 'album': 'Noche De Amor', 'spotify_link': 'https://open.spotify.com/track/6NWbAg55cLW2NoZ891XWSY', 'duration_ms': 230492, 'duration_s': 230.492, 'duration': '3:50', 'filename': 'DJ Henrix [Noche De Amor] Noche De Amor.wav'}, {'id': 20, 'artist': 'Douran', 'title': 'Oraj', 'album': 'Oraj', 'spotify_link': 'https://open.spotify.com/track/1yAb1CahEdSYByTum9lFUL', 'duration_ms': 233966, 'duration_s': 233.966, 'duration': '3:53', 'filename': 'Douran [Oraj] Oraj.wav'}]
+2026-04-04 15:16:10,153 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:16:10,153 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:16:10,795 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:16:38,656 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-04 15:16:38,656 - __main__ - INFO - XLS and TXT files generated.
+2026-04-04 15:23:02,695 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:23:02,695 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:23:03,518 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:24:06,391 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:24:06,391 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:24:07,066 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:25:46,687 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:25:46,687 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:25:47,385 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:26:37,734 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:26:37,734 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:26:38,533 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:27:06,994 - services.xls_service - ERROR - Fail to create TXT File of markers
+2026-04-04 15:28:24,717 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:28:24,717 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:28:25,884 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:28:54,177 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-04 15:28:54,177 - __main__ - INFO - XLS and TXT files generated.
+2026-04-04 15:29:29,050 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:29:29,050 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:31:43,102 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:32:11,251 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-04 15:32:11,251 - __main__ - INFO - XLS file generated.
+2026-04-04 15:43:44,901 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 15:43:44,901 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 15:44:45,589 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 15:45:12,531 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-04 15:45:12,532 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-04 15:45:12,533 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.wav
+2026-04-04 15:45:13,196 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.flac
+2026-04-04 15:45:13,858 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.mp3
+2026-04-04 15:45:20,025 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav
+2026-04-04 15:45:20,112 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.flac
+2026-04-04 15:45:20,673 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.mp3
+2026-04-04 15:45:26,100 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.wav
+2026-04-04 15:45:26,193 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.flac
+2026-04-04 15:45:26,965 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.mp3
+2026-04-04 15:45:34,316 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.wav
+2026-04-04 15:45:34,429 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.flac
+2026-04-04 15:45:35,457 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.mp3
+2026-04-04 15:45:45,613 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.wav
+2026-04-04 15:45:45,708 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.flac
+2026-04-04 15:45:46,160 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.mp3
+2026-04-04 15:45:50,358 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.wav
+2026-04-04 15:45:50,472 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.flac
+2026-04-04 15:45:51,267 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.mp3
+2026-04-04 15:45:59,013 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav
+2026-04-04 15:45:59,137 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.flac
+2026-04-04 15:45:59,953 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.mp3
+2026-04-04 15:46:07,839 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav
+2026-04-04 15:46:07,982 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.flac
+2026-04-04 15:46:08,945 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.mp3
+2026-04-04 15:46:18,316 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.wav
+2026-04-04 15:46:18,454 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.flac
+2026-04-04 15:46:19,266 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.mp3
+2026-04-04 15:46:26,981 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav
+2026-04-04 15:46:27,131 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.flac
+2026-04-04 15:46:27,825 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.mp3
+2026-04-04 15:46:34,506 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.wav
+2026-04-04 15:46:34,660 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.flac
+2026-04-04 15:46:35,303 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.mp3
+2026-04-04 15:46:41,433 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav
+2026-04-04 15:46:41,601 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.flac
+2026-04-04 15:46:42,426 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.mp3
+2026-04-04 15:46:50,523 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav
+2026-04-04 15:46:50,693 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.flac
+2026-04-04 15:46:51,256 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.mp3
+2026-04-04 15:46:56,618 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.wav
+2026-04-04 15:46:56,812 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.flac
+2026-04-04 15:46:57,168 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.mp3
+2026-04-04 15:47:00,457 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav
+2026-04-04 15:47:00,663 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.flac
+2026-04-04 15:47:02,145 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.mp3
+2026-04-04 15:47:17,042 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav
+2026-04-04 15:47:17,251 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.flac
+2026-04-04 15:47:18,271 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.mp3
+2026-04-04 15:47:28,203 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav
+2026-04-04 15:47:28,408 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.flac
+2026-04-04 15:47:28,965 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.mp3
+2026-04-04 15:47:34,338 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.wav
+2026-04-04 15:47:34,536 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.flac
+2026-04-04 15:47:34,889 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.mp3
+2026-04-04 15:47:38,096 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.wav
+2026-04-04 15:47:38,313 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.flac
+2026-04-04 15:47:39,155 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.mp3
+2026-04-04 15:47:47,222 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.wav
+2026-04-04 15:47:47,474 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.flac
+2026-04-04 15:47:48,328 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.mp3
+2026-04-04 16:25:14,694 - __main__ - INFO - XLS File detected. Getting Data...
+2026-04-04 16:41:26,058 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 16:41:26,058 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 16:44:12,778 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 16:44:12,779 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 16:44:18,079 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 16:44:45,330 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-04 16:44:45,331 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-04 16:44:45,332 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.wav
+2026-04-04 16:44:45,435 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.flac
+2026-04-04 16:44:46,095 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.mp3
+2026-04-04 16:44:52,285 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav
+2026-04-04 16:44:52,365 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.flac
+2026-04-04 16:44:52,932 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.mp3
+2026-04-04 16:44:58,378 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.wav
+2026-04-04 16:44:58,461 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.flac
+2026-04-04 16:44:59,233 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.mp3
+2026-04-04 16:45:06,590 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.wav
+2026-04-04 16:45:06,691 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.flac
+2026-04-04 16:45:07,718 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.mp3
+2026-04-04 16:45:18,196 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.wav
+2026-04-04 16:45:18,309 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.flac
+2026-04-04 16:45:18,770 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.mp3
+2026-04-04 16:45:23,013 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.wav
+2026-04-04 16:45:23,150 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.flac
+2026-04-04 16:45:23,961 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.mp3
+2026-04-04 16:45:31,803 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav
+2026-04-04 16:45:31,951 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.flac
+2026-04-04 16:45:32,781 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.mp3
+2026-04-04 16:45:40,708 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav
+2026-04-04 16:45:40,861 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.flac
+2026-04-04 16:45:41,836 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.mp3
+2026-04-04 16:45:51,211 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.wav
+2026-04-04 16:45:51,366 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.flac
+2026-04-04 16:45:52,190 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.mp3
+2026-04-04 16:45:59,927 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav
+2026-04-04 16:46:00,086 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.flac
+2026-04-04 16:46:00,790 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.mp3
+2026-04-04 16:46:07,520 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.wav
+2026-04-04 16:46:07,682 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.flac
+2026-04-04 16:46:08,329 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.mp3
+2026-04-04 16:46:14,512 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav
+2026-04-04 16:46:14,687 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.flac
+2026-04-04 16:46:15,518 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.mp3
+2026-04-04 16:46:23,664 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav
+2026-04-04 16:46:23,838 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.flac
+2026-04-04 16:46:24,403 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.mp3
+2026-04-04 16:46:29,715 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.wav
+2026-04-04 16:46:29,872 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.flac
+2026-04-04 16:46:30,227 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.mp3
+2026-04-04 16:46:33,453 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav
+2026-04-04 16:46:33,672 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.flac
+2026-04-04 16:46:35,174 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.mp3
+2026-04-04 16:46:50,203 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav
+2026-04-04 16:46:50,428 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.flac
+2026-04-04 16:46:51,448 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.mp3
+2026-04-04 16:47:01,596 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav
+2026-04-04 16:47:01,802 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.flac
+2026-04-04 16:47:02,369 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.mp3
+2026-04-04 16:47:07,833 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.wav
+2026-04-04 16:47:08,068 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.flac
+2026-04-04 16:47:08,427 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.mp3
+2026-04-04 16:47:11,782 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.wav
+2026-04-04 16:47:12,011 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.flac
+2026-04-04 16:47:12,874 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.mp3
+2026-04-04 16:47:21,065 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.wav
+2026-04-04 16:47:21,305 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.flac
+2026-04-04 16:47:22,183 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.mp3
+2026-04-04 16:47:30,488 - services.xls_service - INFO - Erreur
+2026-04-04 16:47:54,822 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 16:47:54,822 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 16:47:55,684 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 16:48:24,028 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-04 16:48:24,028 - __main__ - INFO - XLS file generated.
+2026-04-04 16:48:34,171 - __main__ - INFO - XLS File detected. Getting Data...
+2026-04-04 16:50:58,114 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 16:50:58,114 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 16:51:09,032 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 16:51:36,665 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-04 16:51:36,666 - __main__ - INFO - XLS file generated.
+2026-04-04 16:57:27,296 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 16:57:27,296 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 16:57:28,678 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 16:57:55,589 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-04 16:57:55,589 - __main__ - INFO - XLS file generated.
+2026-04-04 18:54:00,500 - __main__ - INFO - XLS File detected. Getting Data...
+2026-04-04 19:03:58,065 - __main__ - INFO - XLS File detected. Getting Data...
+2026-04-04 19:04:43,367 - __main__ - INFO - XLS File detected. Getting Data...
+2026-04-04 19:04:43,379 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 19:05:17,617 - __main__ - INFO - XLS File detected. Getting Data...
+2026-04-04 19:05:17,631 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 19:05:17,631 - __main__ - ERROR - Not Same Size
+2026-04-04 19:06:13,256 - __main__ - INFO - XLS File detected. Getting Data...
+2026-04-04 19:06:13,269 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 19:06:13,269 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-04 19:06:13,269 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-04 19:06:13,270 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.wav
+2026-04-04 19:06:13,430 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.flac
+2026-04-04 19:06:14,071 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.mp3
+2026-04-04 19:06:20,179 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav
+2026-04-04 19:06:20,247 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.flac
+2026-04-04 19:06:20,288 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.mp3
+2026-04-04 19:06:20,360 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.wav
+2026-04-04 19:06:20,415 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.flac
+2026-04-04 19:06:20,454 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.mp3
+2026-04-04 19:06:20,522 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.wav
+2026-04-04 19:06:20,583 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.flac
+2026-04-04 19:06:20,688 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.mp3
+2026-04-04 19:06:21,363 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.wav
+2026-04-04 19:06:21,435 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.flac
+2026-04-04 19:06:21,894 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.mp3
+2026-04-04 19:06:26,325 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.wav
+2026-04-04 19:06:26,435 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.flac
+2026-04-04 19:06:27,252 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.mp3
+2026-04-04 19:06:34,504 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav
+2026-04-04 19:06:34,581 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.flac
+2026-04-04 19:06:34,628 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.mp3
+2026-04-04 19:06:34,715 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav
+2026-04-04 19:06:34,787 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.flac
+2026-04-04 19:06:34,841 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.mp3
+2026-04-04 19:06:34,955 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.wav
+2026-04-04 19:06:35,025 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.flac
+2026-04-04 19:06:35,079 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.mp3
+2026-04-04 19:06:35,184 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav
+2026-04-04 19:06:35,258 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.flac
+2026-04-04 19:06:35,319 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.mp3
+2026-04-04 19:06:35,491 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.wav
+2026-04-04 19:06:35,561 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.flac
+2026-04-04 19:06:35,601 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.mp3
+2026-04-04 19:06:35,668 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav
+2026-04-04 19:06:35,745 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.flac
+2026-04-04 19:06:35,853 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.mp3
+2026-04-04 19:06:36,525 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav
+2026-04-04 19:06:36,598 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.flac
+2026-04-04 19:06:36,649 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.mp3
+2026-04-04 19:06:36,741 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.wav
+2026-04-04 19:06:36,813 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.flac
+2026-04-04 19:06:36,874 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.mp3
+2026-04-04 19:06:37,051 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav
+2026-04-04 19:06:37,123 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.flac
+2026-04-04 19:06:37,182 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.mp3
+2026-04-04 19:06:37,373 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav
+2026-04-04 19:06:37,470 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.flac
+2026-04-04 19:06:38,098 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.mp3
+2026-04-04 19:06:44,059 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav
+2026-04-04 19:06:44,141 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.flac
+2026-04-04 19:06:44,360 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.mp3
+2026-04-04 19:06:46,209 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.wav
+2026-04-04 19:06:46,288 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.flac
+2026-04-04 19:06:46,335 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.mp3
+2026-04-04 19:06:46,421 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.wav
+2026-04-04 19:06:46,516 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.flac
+2026-04-04 19:06:46,956 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.mp3
+2026-04-04 19:06:51,020 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.wav
+2026-04-04 19:06:51,131 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.flac
+2026-04-04 19:06:51,632 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.mp3
+2026-04-04 19:06:56,368 - services.xls_service - INFO - Fichiers supprimés
+2026-04-04 19:09:37,875 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 19:09:37,875 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 19:09:38,867 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 19:10:06,249 - __main__ - INFO - Counts of Filenames and Markers are different.
+2026-04-04 19:10:06,250 - __main__ - INFO - XLS file generated.
+2026-04-04 19:12:46,296 - services.spotify_service - INFO - Parsing URL to get playlist ID...
+2026-04-04 19:12:46,296 - services.spotify_service - INFO - Getting access token from Spotify...
+2026-04-04 19:12:47,060 - services.audio_service - INFO - WAV, MP3 and FLAC files from previous extract are erased
+2026-04-04 19:13:14,039 - __main__ - INFO - Counts of Filenames and Marker are the same.
+2026-04-04 19:13:14,040 - __main__ - INFO - Generating WAV, FLAC and MP3...
+2026-04-04 19:13:14,043 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.wav
+2026-04-04 19:13:14,152 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.flac
+2026-04-04 19:13:14,806 - services.audio_service - INFO - Export : | Ajeet [Soften] Soften.mp3
+2026-04-04 19:13:20,948 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.wav
+2026-04-04 19:13:21,034 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.flac
+2026-04-04 19:13:21,590 - services.audio_service - INFO - Export : | Alban Claudin, Jerome Rebotier [Le Comte de Monte Cristo Piano Version] Mercedes - Piano Version.mp3
+2026-04-04 19:13:27,000 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.wav
+2026-04-04 19:13:27,091 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.flac
+2026-04-04 19:13:27,857 - services.audio_service - INFO - Export : | Alewya, eejebee +1 [City of Symbols] City of Symbols.mp3
+2026-04-04 19:13:35,156 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.wav
+2026-04-04 19:13:35,275 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.flac
+2026-04-04 19:13:36,291 - services.audio_service - INFO - Export : | Alice Baldwin [Was am Ende] Was am Ende.mp3
+2026-04-04 19:13:46,414 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.wav
+2026-04-04 19:13:46,511 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.flac
+2026-04-04 19:13:46,960 - services.audio_service - INFO - Export : | Arya [the mind settles] the mind settles.mp3
+2026-04-04 19:13:51,123 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.wav
+2026-04-04 19:13:51,240 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.flac
+2026-04-04 19:13:52,026 - services.audio_service - INFO - Export : | Austin Farwell [Venus and Flower] Venus and Flower.mp3
+2026-04-04 19:13:59,691 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.wav
+2026-04-04 19:13:59,826 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.flac
+2026-04-04 19:14:00,644 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Lux Permanet.mp3
+2026-04-04 19:14:08,491 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.wav
+2026-04-04 19:14:08,635 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.flac
+2026-04-04 19:14:09,598 - services.audio_service - INFO - Export : | Birds on a Wire, Dom La Nena +1 [Le Chant des forets] Who Knows Where the Times Goes.mp3
+2026-04-04 19:14:18,895 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.wav
+2026-04-04 19:14:19,038 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.flac
+2026-04-04 19:14:19,839 - services.audio_service - INFO - Export : | Bleu nuage [Goodbye] Goodbye.mp3
+2026-04-04 19:14:27,488 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.wav
+2026-04-04 19:14:27,640 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.flac
+2026-04-04 19:14:28,331 - services.audio_service - INFO - Export : | Bleu nuage [J'attends que la nuit] J'attends que la nuit.mp3
+2026-04-04 19:14:34,980 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.wav
+2026-04-04 19:14:35,132 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.flac
+2026-04-04 19:14:35,770 - services.audio_service - INFO - Export : | Christopher Willis [The Personal History of David Copperfield] David's Writings.mp3
+2026-04-04 19:14:41,877 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.wav
+2026-04-04 19:14:42,044 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.flac
+2026-04-04 19:14:42,864 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] You Were Loved Burial.mp3
+2026-04-04 19:14:50,927 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.wav
+2026-04-04 19:14:51,096 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.flac
+2026-04-04 19:14:51,653 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Rocky Sacrifice.mp3
+2026-04-04 19:14:56,919 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.wav
+2026-04-04 19:14:57,077 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.flac
+2026-04-04 19:14:57,428 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Humanity.mp3
+2026-04-04 19:15:00,624 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.wav
+2026-04-04 19:15:00,846 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.flac
+2026-04-04 19:15:02,322 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Time Go Fishing.mp3
+2026-04-04 19:15:17,185 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.wav
+2026-04-04 19:15:17,393 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.flac
+2026-04-04 19:15:18,396 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Ryland Grace, Cognition Assessment.mp3
+2026-04-04 19:15:28,296 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.wav
+2026-04-04 19:15:28,500 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.flac
+2026-04-04 19:15:29,054 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] Top Secret Clearance.mp3
+2026-04-04 19:15:34,410 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.wav
+2026-04-04 19:15:34,602 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.flac
+2026-04-04 19:15:34,953 - services.audio_service - INFO - Export : | Daniel Pemberton [Project Hail Mary] God Willing.mp3
+2026-04-04 19:15:38,143 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.wav
+2026-04-04 19:15:38,358 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.flac
+2026-04-04 19:15:39,197 - services.audio_service - INFO - Export : | DJ Henrix [Noche De Amor] Noche De Amor.mp3
+2026-04-04 19:15:47,244 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.wav
+2026-04-04 19:15:47,469 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.flac
+2026-04-04 19:15:48,313 - services.audio_service - INFO - Export : | Douran [Oraj] Oraj.mp3
+2026-04-04 19:15:56,450 - services.xls_service - INFO - Erreur
